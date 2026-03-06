@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
-import type { CostumeItem, DataFile } from "./types";
+import type { DataFile } from "./types";
 import { withBase } from "./lib/imagePath";
 
 const ALL = "全部";
@@ -20,7 +20,6 @@ export default function App() {
 
   const [openSetId, setOpenSetId] = useState<string | null>(null);
 
-  // ★モーダル表示中は背面スクロールを止める
   useEffect(() => {
     if (!openSetId) return;
     const prev = document.body.style.overflow;
@@ -42,13 +41,17 @@ export default function App() {
 
   const categories = useMemo(() => {
     const s = new Set<string>();
-    for (const it of data?.items ?? []) if (it.category) s.add(it.category);
+    for (const it of data?.items ?? []) {
+      if (it.category) s.add(it.category);
+    }
     return Array.from(s).sort();
   }, [data]);
 
   const statuses = useMemo(() => {
     const s = new Set<string>();
-    for (const it of data?.items ?? []) s.add(it.status);
+    for (const it of data?.items ?? []) {
+      s.add(it.status);
+    }
     return Array.from(s).sort();
   }, [data]);
 
@@ -86,12 +89,15 @@ export default function App() {
     return (data?.items ?? []).filter((x) => x.setId === openSetId);
   }, [data, openSetId]);
 
+  const generatedDate = data?.generatedAt
+    ? new Date(data.generatedAt).toISOString().slice(0, 10)
+    : "-";
+
   return (
     <>
       <header>
         <div className="container">
           <div className="h1">衣装一覧（閲覧）</div>
-    {/* 削除 */}
 
           <div className="controls">
             <input
@@ -121,7 +127,10 @@ export default function App() {
               ))}
             </select>
 
-            <select value={setOnly} onChange={(e) => setSetOnly(e.target.value)}>
+            <select
+              value={setOnly}
+              onChange={(e) => setSetOnly(e.target.value)}
+            >
               <option value={ALL}>セット：全部</option>
               <option value="セット有">セット：有</option>
               <option value="セット無">セット：無</option>
@@ -130,8 +139,8 @@ export default function App() {
 
           <div className="infoBar">
             <div>件数：{filtered.length}</div>
-            <div>最終更新：{data?.updatedAt ? new Date(data.updatedAt).toISOString().slice(0, 10) : "-"}
-</div>
+            <div>最終更新：{generatedDate}</div>
+          </div>
 
           {err && (
             <div className="cardError">
@@ -223,6 +232,7 @@ export default function App() {
               <div className="setGrid">
                 {setItems.map((x) => {
                   const img = x.image ? withBase(x.image) : undefined;
+
                   return (
                     <div className="card" key={x.itemId}>
                       <div className="thumb">
@@ -232,15 +242,18 @@ export default function App() {
                           <div className="mini">画像なし</div>
                         )}
                       </div>
+
                       <div className="body">
                         <div className="rowTop">
                           <div className="id">{x.itemId}</div>
                           <div className="badge">{x.status}</div>
                         </div>
+
                         <div className="meta">
                           {x.category && <div>カテゴリ：{x.category}</div>}
                           {x.name && <div>名称：{x.name}</div>}
                         </div>
+
                         {x.note && <div className="mini">メモ：{x.note}</div>}
                       </div>
                     </div>
