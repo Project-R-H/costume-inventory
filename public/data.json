@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T03:51:51.818Z",
+  "generatedAt": "2026-03-06T04:01:54.258Z",
   "items": [
     {
       "itemId": "ITM-0001",
@@ -99,23 +99,17 @@
     },
     {
       "itemId": "ITM-0013",
-      "status": "貸出中",
+      "status": "廃棄",
       "setId": "SET-0002",
       "category": "メイド",
-      "name": "テスト表示用",
-      "borrower": "テスト表示用",
-      "approvedBy": "田中",
-      "loanDate": "2026-02-21"
+      "name": "テスト表示用"
     },
     {
       "itemId": "ITM-0014",
-      "status": "貸出中",
+      "status": "洗濯中",
       "setId": "SET-0002",
       "category": "メイド",
-      "name": "テスト表示用",
-      "borrower": "テスト表示用",
-      "approvedBy": "田中",
-      "loanDate": "2026-02-21"
+      "name": "テスト表示用"
     },
     {
       "itemId": "ITM-0015",
