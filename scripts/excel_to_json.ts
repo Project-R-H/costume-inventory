@@ -23,7 +23,7 @@ type DataFile = {
 };
 
 const ROOT = process.cwd();
-const INPUT_XLSX = "C:/Users/user/Desktop/data/衣装管理.xlsx";
+const INPUT_XLSX = path.resolve("C:\\Users\\user\\Desktop\\data\\衣装管理.xlsx");
 const OUTPUT_PUBLIC = path.join(ROOT, "public", "data.json");
 const OUTPUT_DOCS = path.join(ROOT, "docs", "data.json");
 
@@ -107,7 +107,13 @@ function main() {
     throw new Error(`Excelファイルが見つかりません: ${INPUT_XLSX}`);
   }
 
-  const wb = XLSX.readFile(INPUT_XLSX, { cellDates: true });
+  fs.accessSync(INPUT_XLSX, fs.constants.R_OK);
+
+  const fileBuffer = fs.readFileSync(INPUT_XLSX);
+  const wb = XLSX.read(fileBuffer, {
+    type: "buffer",
+    cellDates: true,
+  });
 
   const wsItems = wb.Sheets[SHEET_ITEMS];
   const wsLoans = wb.Sheets[SHEET_LOANS];
@@ -119,33 +125,10 @@ function main() {
     throw new Error(`シート「${SHEET_LOANS}」が見つかりません`);
   }
 
-  /**
-   * 個体台帳
-   * A: セットID
-   * B: 個体ID
-   * C: 種類
-   * D: カテゴリ
-   * E: 状態
-   * F: 保管場所
-   * G: 写真（ファイル名/パス）
-   * H: 備考
-   * I: 写真ファイル名
-   * J: 公開名
-   * K: 公開/非公開
-   */
   const itemRows = XLSX.utils.sheet_to_json<Record<string, unknown>>(wsItems, {
     defval: "",
   });
 
-  /**
-   * 貸出記録
-   * A: 貸出ID
-   * B: セットID
-   * C: 貸出先
-   * D: 貸出日
-   * E: 返却日
-   * F: 承認者
-   */
   const loanRows = XLSX.utils.sheet_to_json<Record<string, unknown>>(wsLoans, {
     defval: "",
   });
@@ -191,14 +174,12 @@ function main() {
 
     if (!itemId) continue;
 
-    // 非公開は出さない
     if (publicFlag && publicFlag !== "公開") {
       continue;
     }
 
     let status = normalizeStatus(rawStatus);
 
-    // 貸出記録に未返却があれば強制で貸出中
     const activeLoan = setId ? activeLoanMap.get(setId) : undefined;
     if (activeLoan) {
       status = "貸出中";
@@ -216,7 +197,6 @@ function main() {
     if (note) item.note = note;
     if (image) item.image = image;
 
-    // 表示名優先、なければカテゴリ+種類
     if (publicName) {
       item.name = publicName;
     } else {

@@ -1,109 +1,121 @@
 {
-  "generatedAt": "2026-03-05T08:45:20.560Z",
+  "generatedAt": "2026-03-06T03:51:51.818Z",
   "items": [
     {
       "itemId": "ITM-0001",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ミントブルーのメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0001.jpg"
+      "image": "衣装写真/メイド/ITM-0001.jpg",
+      "name": "ミントブルーのメイド服"
     },
     {
       "itemId": "ITM-0002",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ミントブルーのメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0002.jpg"
+      "image": "衣装写真/メイド/ITM-0002.jpg",
+      "name": "ミントブルーのメイド服"
     },
     {
       "itemId": "ITM-0003",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ミントブルーのメイド服(エプロン付き)",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0003.jpg"
+      "image": "衣装写真/メイド/ITM-0003.jpg",
+      "name": "ミントブルーのメイド服(エプロン付き)"
     },
     {
       "itemId": "ITM-0004",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ミントブルーのメイド服(装飾なし)",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0004.jpg"
+      "image": "衣装写真/メイド/ITM-0004.jpg",
+      "name": "ミントブルーのメイド服(装飾なし)"
     },
     {
       "itemId": "ITM-0005",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ミントブルーのメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0005.jpg"
+      "image": "衣装写真/メイド/ITM-0005.jpg",
+      "name": "ミントブルーのメイド服"
     },
     {
       "itemId": "ITM-0006",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ミントブルーのメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0006.jpg"
+      "image": "衣装写真/メイド/ITM-0006.jpg",
+      "name": "ミントブルーのメイド服"
     },
     {
       "itemId": "ITM-0007",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ラベンダー色のメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0007.jpg"
+      "image": "衣装写真/メイド/ITM-0007.jpg",
+      "name": "ラベンダー色のメイド服"
     },
     {
       "itemId": "ITM-0008",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ラベンダー色のメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0008.jpg"
+      "image": "衣装写真/メイド/ITM-0008.jpg",
+      "name": "ラベンダー色のメイド服"
     },
     {
       "itemId": "ITM-0009",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ミントブルーのメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0009.jpg"
+      "image": "衣装写真/メイド/ITM-0009.jpg",
+      "name": "ミントブルーのメイド服"
     },
     {
       "itemId": "ITM-0010",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ミントブルーのメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0010.jpg"
+      "image": "衣装写真/メイド/ITM-0010.jpg",
+      "name": "ミントブルーのメイド服"
     },
     {
       "itemId": "ITM-0011",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ラベンダー色のメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0011.jpg"
+      "image": "衣装写真/メイド/ITM-0011.jpg",
+      "name": "ラベンダー色のメイド服"
     },
     {
       "itemId": "ITM-0012",
+      "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "name": "ラベンダー色のメイド服",
-      "status": "在庫",
-      "image": "衣装写真/メイド/ITM-0012.jpg"
+      "image": "衣装写真/メイド/ITM-0012.jpg",
+      "name": "ラベンダー色のメイド服"
     },
     {
       "itemId": "ITM-0013",
-      "status": "不明"
+      "status": "貸出中",
+      "setId": "SET-0002",
+      "category": "メイド",
+      "name": "テスト表示用",
+      "borrower": "テスト表示用",
+      "approvedBy": "田中",
+      "loanDate": "2026-02-21"
     },
     {
       "itemId": "ITM-0014",
-      "status": "不明"
+      "status": "貸出中",
+      "setId": "SET-0002",
+      "category": "メイド",
+      "name": "テスト表示用",
+      "borrower": "テスト表示用",
+      "approvedBy": "田中",
+      "loanDate": "2026-02-21"
     },
     {
       "itemId": "ITM-0015",
