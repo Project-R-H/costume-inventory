@@ -115,8 +115,39 @@ main { padding: 16px 0 40px; }
   border-radius: 999px;
   padding: 4px 9px;
   border: 1px solid #e5e7eb;
-  background: #f8fafc;
   white-space: nowrap;
+  font-weight: 700;
+}
+
+/* 状態色分け */
+.status-stock {
+  background: #e8f7ec;
+  color: #15803d;
+  border-color: #b7e4c7;
+}
+
+.status-loan {
+  background: #fff4e5;
+  color: #c2410c;
+  border-color: #fed7aa;
+}
+
+.status-wash {
+  background: #e8f1ff;
+  color: #1d4ed8;
+  border-color: #bfdbfe;
+}
+
+.status-discard {
+  background: #fdecec;
+  color: #dc2626;
+  border-color: #fecaca;
+}
+
+.status-unknown {
+  background: #f1f5f9;
+  color: #475569;
+  border-color: #cbd5e1;
 }
 
 .meta { color: #334155; font-size: 13px; display: grid; gap: 4px; }
@@ -130,26 +161,19 @@ main { padding: 16px 0 40px; }
   inset: 0;
   background: rgba(15, 23, 42, 0.55);
   z-index: 999;
-
-  /* ★背面じゃなく、モーダル側をスクロールさせる */
   overflow: auto;
   padding: 18px;
-
-  /* gridで中央固定だとスクロールできないのでやめる */
   display: block;
 }
 
 .modal {
   width: min(1100px, 100%);
   margin: 0 auto;
-
   background: #fff;
   border-radius: 18px;
   border: 1px solid #e5e7eb;
   box-shadow: 0 20px 60px rgba(0,0,0,0.2);
   overflow: hidden;
-
-  /* ★画面からはみ出しても中をスクロールできるように */
   max-height: calc(100vh - 36px);
   display: flex;
   flex-direction: column;
@@ -161,8 +185,6 @@ main { padding: 16px 0 40px; }
   align-items: center;
   padding: 14px 14px;
   border-bottom: 1px solid #eef2f7;
-
-  /* ★ヘッダー固定 */
   flex: 0 0 auto;
 }
 
@@ -178,8 +200,6 @@ main { padding: 16px 0 40px; }
 
 .modalBody {
   padding: 14px;
-
-  /* ★ここがスクロール領域 */
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   flex: 1 1 auto;

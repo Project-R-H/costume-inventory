@@ -9,6 +9,21 @@ function stop(e: React.MouseEvent) {
   e.stopPropagation();
 }
 
+function statusClass(status: string) {
+  switch (status) {
+    case "在庫":
+      return "badge status-stock";
+    case "貸出中":
+      return "badge status-loan";
+    case "洗濯中":
+      return "badge status-wash";
+    case "廃棄":
+      return "badge status-discard";
+    default:
+      return "badge status-unknown";
+  }
+}
+
 export default function App() {
   const [data, setData] = useState<DataFile | null>(null);
   const [err, setErr] = useState<string | null>(null);
@@ -182,7 +197,7 @@ export default function App() {
                   <div className="body">
                     <div className="rowTop">
                       <div className="id">{it.itemId}</div>
-                      <div className="badge">{it.status}</div>
+                      <div className={statusClass(it.status)}>{it.status}</div>
                     </div>
 
                     <div className="meta">
@@ -246,7 +261,7 @@ export default function App() {
                       <div className="body">
                         <div className="rowTop">
                           <div className="id">{x.itemId}</div>
-                          <div className="badge">{x.status}</div>
+                          <div className={statusClass(x.status)}>{x.status}</div>
                         </div>
 
                         <div className="meta">
