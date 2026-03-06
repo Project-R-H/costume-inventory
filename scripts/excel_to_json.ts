@@ -23,19 +23,24 @@ type DataFile = {
 };
 
 const ROOT = process.cwd();
-const INPUT_XLSX = path.join(ROOT, "衣装管理.xlsx");
+
+/**
+ * 固定で読むExcel
+ * GitHubに置かないローカル専用ファイル
+ */
+const INPUT_XLSX = "C:/Users/user/Desktop/data/衣装管理.xlsx";
+
 const OUTPUT_PUBLIC = path.join(ROOT, "public", "data.json");
 const OUTPUT_DOCS = path.join(ROOT, "docs", "data.json");
 
 /**
- * 必要に応じてここだけ変えればよい
- * まずは1枚目のシートを使う
+ * 必要ならここで対象シート名を固定
+ * 空なら先頭シートを使う
  */
 const TARGET_SHEET_NAME = "";
 
 /**
- * Excelの見出し候補
- * 実ファイルに合わせて増やせる
+ * Excelの列見出し候補
  */
 const HEADER_CANDIDATES = {
   itemId: ["個体ID", "衣装ID", "ID", "管理番号", "アイテムID"],
@@ -50,24 +55,15 @@ const HEADER_CANDIDATES = {
   loanDate: ["貸出日", "貸出開始日", "使用日"],
 };
 
-/**
- * 空判定
- */
 function isBlank(v: unknown): boolean {
   return v === undefined || v === null || String(v).trim() === "";
 }
 
-/**
- * 文字列化
- */
 function toStr(v: unknown): string {
   if (v === undefined || v === null) return "";
   return String(v).trim();
 }
 
-/**
- * 見出し候補から値を拾う
- */
 function pick(row: Record<string, unknown>, candidates: string[]): string {
   for (const key of candidates) {
     if (key in row && !isBlank(row[key])) {
@@ -77,15 +73,11 @@ function pick(row: Record<string, unknown>, candidates: string[]): string {
   return "";
 }
 
-/**
- * Excelの状態表記ゆれを統一
- */
 function normalizeStatus(raw: string): CostumeStatus {
   const s = raw.replace(/\s+/g, "").trim().toLowerCase();
 
   if (!s) return "不明";
 
-  // 在庫
   if (
     s === "在庫" ||
     s === "あり" ||
@@ -96,7 +88,6 @@ function normalizeStatus(raw: string): CostumeStatus {
     return "在庫";
   }
 
-  // 貸出中
   if (
     s === "貸出中" ||
     s === "貸し出し中" ||
@@ -108,7 +99,6 @@ function normalizeStatus(raw: string): CostumeStatus {
     return "貸出中";
   }
 
-  // 洗濯中
   if (
     s === "洗濯中" ||
     s === "洗濯" ||
@@ -119,7 +109,6 @@ function normalizeStatus(raw: string): CostumeStatus {
     return "洗濯中";
   }
 
-  // 廃棄
   if (
     s === "廃棄" ||
     s === "廃棄済" ||
@@ -134,9 +123,6 @@ function normalizeStatus(raw: string): CostumeStatus {
   return "不明";
 }
 
-/**
- * 日付っぽい値の整形
- */
 function normalizeDate(raw: unknown): string {
   if (raw === undefined || raw === null || raw === "") return "";
 
@@ -155,29 +141,17 @@ function normalizeDate(raw: unknown): string {
   return s;
 }
 
-/**
- * 画像パス自動生成
- * Excelに画像パスが無ければ itemId.jpg を想定
- * 必要ならここをpng優先などに変えられる
- */
 function buildImagePath(itemId: string, excelValue: string): string {
   if (excelValue) return excelValue.replace(/\\/g, "/");
-
   if (!itemId) return "";
 
-  // 既に拡張子付きならそのまま
   if (/\.(jpg|jpeg|png|webp)$/i.test(itemId)) {
     return itemId.replace(/\\/g, "/");
   }
 
-  // 既定: メイド配下に jpg
-  // 実運用でカテゴリ別に振り分けるならここを調整
   return `衣装写真/メイド/${itemId}.jpg`;
 }
 
-/**
- * 行をCostumeItemへ変換
- */
 function mapRowToItem(row: Record<string, unknown>): CostumeItem | null {
   const itemId = pick(row, HEADER_CANDIDATES.itemId);
   if (!itemId) return null;
@@ -264,6 +238,7 @@ function main() {
     不明: items.filter((x) => x.status === "不明").length,
   };
 
+  console.log(`読込Excel: ${INPUT_XLSX}`);
   console.log(`シート: ${sheetName}`);
   console.log(`件数: ${items.length}`);
   console.log("状態内訳:", counts);
