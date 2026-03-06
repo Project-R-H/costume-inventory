@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 衣装管理サイト（閲覧用）
 
 このリポジトリは、衣装の在庫状況を閲覧するためのサイトです。
@@ -175,3 +176,7 @@ npm run build
 git add -A
 git commit -m "update"
 git push origin main
+=======
+# costume-inventory
+Costume inventory and lending management system for Project-R.
+>>>>>>> 0e24ea006dcf8993d6fbd3ac561c6f0ac2a8a1fc
