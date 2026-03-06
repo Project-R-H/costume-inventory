@@ -1,0 +1,2049 @@
+{
+  "generatedAt": "2026-03-05T08:45:20.560Z",
+  "items": [
+    {
+      "itemId": "ITM-0001",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ミントブルーのメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0001.jpg"
+    },
+    {
+      "itemId": "ITM-0002",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ミントブルーのメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0002.jpg"
+    },
+    {
+      "itemId": "ITM-0003",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ミントブルーのメイド服(エプロン付き)",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0003.jpg"
+    },
+    {
+      "itemId": "ITM-0004",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ミントブルーのメイド服(装飾なし)",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0004.jpg"
+    },
+    {
+      "itemId": "ITM-0005",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ミントブルーのメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0005.jpg"
+    },
+    {
+      "itemId": "ITM-0006",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ミントブルーのメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0006.jpg"
+    },
+    {
+      "itemId": "ITM-0007",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ラベンダー色のメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0007.jpg"
+    },
+    {
+      "itemId": "ITM-0008",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ラベンダー色のメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0008.jpg"
+    },
+    {
+      "itemId": "ITM-0009",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ミントブルーのメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0009.jpg"
+    },
+    {
+      "itemId": "ITM-0010",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ミントブルーのメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0010.jpg"
+    },
+    {
+      "itemId": "ITM-0011",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ラベンダー色のメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0011.jpg"
+    },
+    {
+      "itemId": "ITM-0012",
+      "setId": "SET-0001",
+      "category": "メイド",
+      "name": "ラベンダー色のメイド服",
+      "status": "在庫",
+      "image": "衣装写真/メイド/ITM-0012.jpg"
+    },
+    {
+      "itemId": "ITM-0013",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0014",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0015",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0016",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0017",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0018",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0019",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0020",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0021",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0022",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0023",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0024",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0025",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0026",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0027",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0028",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0029",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0030",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0031",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0032",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0033",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0034",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0035",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0036",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0037",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0038",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0039",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0040",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0041",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0042",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0043",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0044",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0045",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0046",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0047",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0048",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0049",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0050",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0051",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0052",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0053",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0054",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0055",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0056",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0057",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0058",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0059",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0060",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0061",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0062",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0063",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0064",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0065",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0066",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0067",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0068",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0069",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0070",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0071",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0072",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0073",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0074",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0075",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0076",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0077",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0078",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0079",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0080",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0081",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0082",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0083",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0084",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0085",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0086",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0087",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0088",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0089",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0090",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0091",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0092",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0093",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0094",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0095",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0096",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0097",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0098",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0099",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0100",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0101",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0102",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0103",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0104",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0105",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0106",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0107",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0108",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0109",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0110",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0111",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0112",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0113",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0114",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0115",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0116",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0117",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0118",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0119",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0120",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0121",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0122",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0123",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0124",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0125",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0126",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0127",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0128",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0129",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0130",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0131",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0132",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0133",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0134",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0135",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0136",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0137",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0138",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0139",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0140",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0141",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0142",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0143",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0144",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0145",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0146",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0147",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0148",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0149",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0150",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0151",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0152",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0153",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0154",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0155",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0156",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0157",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0158",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0159",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0160",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0161",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0162",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0163",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0164",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0165",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0166",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0167",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0168",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0169",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0170",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0171",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0172",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0173",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0174",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0175",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0176",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0177",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0178",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0179",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0180",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0181",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0182",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0183",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0184",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0185",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0186",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0187",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0188",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0189",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0190",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0191",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0192",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0193",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0194",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0195",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0196",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0197",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0198",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0199",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0200",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0201",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0202",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0203",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0204",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0205",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0206",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0207",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0208",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0209",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0210",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0211",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0212",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0213",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0214",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0215",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0216",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0217",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0218",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0219",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0220",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0221",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0222",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0223",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0224",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0225",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0226",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0227",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0228",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0229",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0230",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0231",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0232",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0233",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0234",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0235",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0236",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0237",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0238",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0239",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0240",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0241",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0242",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0243",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0244",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0245",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0246",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0247",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0248",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0249",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0250",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0251",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0252",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0253",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0254",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0255",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0256",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0257",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0258",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0259",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0260",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0261",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0262",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0263",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0264",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0265",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0266",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0267",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0268",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0269",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0270",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0271",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0272",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0273",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0274",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0275",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0276",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0277",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0278",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0279",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0280",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0281",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0282",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0283",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0284",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0285",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0286",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0287",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0288",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0289",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0290",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0291",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0292",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0293",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0294",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0295",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0296",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0297",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0298",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0299",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0300",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0301",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0302",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0303",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0304",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0305",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0306",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0307",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0308",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0309",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0310",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0311",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0312",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0313",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0314",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0315",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0316",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0317",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0318",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0319",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0320",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0321",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0322",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0323",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0324",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0325",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0326",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0327",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0328",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0329",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0330",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0331",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0332",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0333",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0334",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0335",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0336",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0337",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0338",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0339",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0340",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0341",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0342",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0343",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0344",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0345",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0346",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0347",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0348",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0349",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0350",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0351",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0352",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0353",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0354",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0355",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0356",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0357",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0358",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0359",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0360",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0361",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0362",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0363",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0364",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0365",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0366",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0367",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0368",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0369",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0370",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0371",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0372",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0373",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0374",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0375",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0376",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0377",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0378",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0379",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0380",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0381",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0382",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0383",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0384",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0385",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0386",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0387",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0388",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0389",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0390",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0391",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0392",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0393",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0394",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0395",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0396",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0397",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0398",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0399",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0400",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0401",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0402",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0403",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0404",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0405",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0406",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0407",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0408",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0409",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0410",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0411",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0412",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0413",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0414",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0415",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0416",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0417",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0418",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0419",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0420",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0421",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0422",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0423",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0424",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0425",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0426",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0427",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0428",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0429",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0430",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0431",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0432",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0433",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0434",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0435",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0436",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0437",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0438",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0439",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0440",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0441",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0442",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0443",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0444",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0445",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0446",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0447",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0448",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0449",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0450",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0451",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0452",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0453",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0454",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0455",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0456",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0457",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0458",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0459",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0460",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0461",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0462",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0463",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0464",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0465",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0466",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0467",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0468",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0469",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0470",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0471",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0472",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0473",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0474",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0475",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0476",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0477",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0478",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0479",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0480",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0481",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0482",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0483",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0484",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0485",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0486",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0487",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0488",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0489",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0490",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0491",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0492",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0493",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0494",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0495",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0496",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0497",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0498",
+      "status": "不明"
+    },
+    {
+      "itemId": "ITM-0499",
+      "status": "不明"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "costume-inventory",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gen": "tsx scripts/excel_to_json.ts",
+    "watch:gen": "tsx scripts/watch_gen.ts",
+    "publish": "tsx scripts/publish.ts"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.2/xlsx-0.20.2.tgz"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^5.1.4",
+    "chokidar": "^3.6.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.1"
+  }
+}
