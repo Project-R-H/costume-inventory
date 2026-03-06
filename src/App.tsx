@@ -91,9 +91,7 @@ export default function App() {
       <header>
         <div className="container">
           <div className="h1">衣装一覧（閲覧）</div>
-          <div className="sub">
-            更新：Excel/写真 → <b>npm run gen</b>（または watch）→ ブラウザ更新
-          </div>
+    {/* 削除 */}
 
           <div className="controls">
             <input
@@ -132,8 +130,8 @@ export default function App() {
 
           <div className="infoBar">
             <div>件数：{filtered.length}</div>
-            <div>最終更新：{data?.generatedAt ?? "-"}</div>
-          </div>
+            <div>最終更新：{new Date(data.updatedAt).toISOString().slice(0,10)}</div>          
+</div>
 
           {err && (
             <div className="cardError">
