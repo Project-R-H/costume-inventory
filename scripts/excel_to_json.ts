@@ -23,61 +23,15 @@ type DataFile = {
 };
 
 const ROOT = process.cwd();
-
-/**
- * 読み込むExcelを固定
- */
 const INPUT_XLSX = "C:/Users/user/Desktop/data/衣装管理.xlsx";
-
-/**
- * 出力先（公開用JSON）
- */
 const OUTPUT_PUBLIC = path.join(ROOT, "public", "data.json");
 const OUTPUT_DOCS = path.join(ROOT, "docs", "data.json");
 
-/**
- * 実ファイルに合わせて固定
- */
 const SHEET_ITEMS = "個体台帳";
 const SHEET_LOANS = "貸出記録";
 
-/**
- * Excelの状態表記を統一
- */
-function normalizeStatus(raw: unknown): CostumeStatus {
-  const s = String(raw ?? "").replace(/\s+/g, "").trim();
-
-  if (!s) return "不明";
-
-  if (s === "在庫" || s === "在庫あり" || s === "保管中") return "在庫";
-  if (
-    s === "貸出中" ||
-    s === "貸出" ||
-    s === "貸し出し中" ||
-    s === "使用中" ||
-    s === "レンタル中"
-  ) {
-    return "貸出中";
-  }
-  if (
-    s === "洗濯中" ||
-    s === "洗濯" ||
-    s === "クリーニング中" ||
-    s === "クリーニング"
-  ) {
-    return "洗濯中";
-  }
-  if (
-    s === "廃棄" ||
-    s === "廃棄済" ||
-    s === "廃棄済み" ||
-    s === "処分" ||
-    s === "処分済"
-  ) {
-    return "廃棄";
-  }
-
-  return "不明";
+function ensureDir(filePath: string) {
+  fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
 function toText(v: unknown): string {
@@ -103,8 +57,49 @@ function toDateText(v: unknown): string {
   return s;
 }
 
-function ensureDir(filePath: string) {
-  fs.mkdirSync(path.dirname(filePath), { recursive: true });
+function normalizeStatus(raw: unknown): CostumeStatus {
+  const s = String(raw ?? "").replace(/\s+/g, "").trim();
+
+  if (!s) return "不明";
+
+  if (s === "在庫" || s === "在庫あり" || s === "保管中") return "在庫";
+
+  if (
+    s === "貸出中" ||
+    s === "貸出" ||
+    s === "貸し出し中" ||
+    s === "使用中" ||
+    s === "レンタル中"
+  ) {
+    return "貸出中";
+  }
+
+  if (
+    s === "洗濯中" ||
+    s === "洗濯" ||
+    s === "クリーニング中" ||
+    s === "クリーニング"
+  ) {
+    return "洗濯中";
+  }
+
+  if (
+    s === "廃棄" ||
+    s === "廃棄済" ||
+    s === "廃棄済み" ||
+    s === "処分" ||
+    s === "処分済"
+  ) {
+    return "廃棄";
+  }
+
+  return "不明";
+}
+
+function buildImagePath(category: string, photoFileName: string): string {
+  if (!photoFileName) return "";
+  if (!category) return `衣装写真/${photoFileName}`;
+  return `衣装写真/${category}/${photoFileName}`;
 }
 
 function main() {
@@ -112,9 +107,7 @@ function main() {
     throw new Error(`Excelファイルが見つかりません: ${INPUT_XLSX}`);
   }
 
-  const wb = XLSX.readFile(INPUT_XLSX, {
-    cellDates: true,
-  });
+  const wb = XLSX.readFile(INPUT_XLSX, { cellDates: true });
 
   const wsItems = wb.Sheets[SHEET_ITEMS];
   const wsLoans = wb.Sheets[SHEET_LOANS];
@@ -127,8 +120,7 @@ function main() {
   }
 
   /**
-   * 個体台帳を読む
-   * 実際の列構成:
+   * 個体台帳
    * A: セットID
    * B: 個体ID
    * C: 種類
@@ -146,8 +138,7 @@ function main() {
   });
 
   /**
-   * 貸出記録を読む
-   * 実際の列構成:
+   * 貸出記録
    * A: 貸出ID
    * B: セットID
    * C: 貸出先
@@ -159,9 +150,6 @@ function main() {
     defval: "",
   });
 
-  /**
-   * 未返却のセットID一覧を作る
-   */
   const activeLoanMap = new Map<
     string,
     {
@@ -203,60 +191,43 @@ function main() {
 
     if (!itemId) continue;
 
-    /**
-     * 非公開は出さない
-     * 空欄は公開扱いにする
-     */
+    // 非公開は出さない
     if (publicFlag && publicFlag !== "公開") {
       continue;
     }
 
-    /**
-     * まず個体台帳の状態を優先
-     */
     let status = normalizeStatus(rawStatus);
 
-    /**
-     * ただし貸出記録で未返却があれば貸出中を優先
-     * （個体台帳の更新漏れ対策）
-     */
+    // 貸出記録に未返却があれば強制で貸出中
     const activeLoan = setId ? activeLoanMap.get(setId) : undefined;
     if (activeLoan) {
       status = "貸出中";
     }
 
-    let image = "";
-    if (photoFileName && category) {
-      image = `衣装写真/${category}/${photoFileName}`;
-    }
+    const image = buildImagePath(category, photoFileName);
 
     const item: CostumeItem = {
       itemId,
-      setId: setId || undefined,
-      category: category || undefined,
-      name: publicName || undefined,
       status,
-      note: note || undefined,
-      image: image || undefined,
     };
 
-    /**
-     * 補助情報
-     */
-    if (activeLoan) {
-      item.borrower = activeLoan.borrower || undefined;
-      item.approvedBy = activeLoan.approvedBy || undefined;
-      item.loanDate = activeLoan.loanDate || undefined;
+    if (setId) item.setId = setId;
+    if (category) item.category = category;
+    if (note) item.note = note;
+    if (image) item.image = image;
+
+    // 表示名優先、なければカテゴリ+種類
+    if (publicName) {
+      item.name = publicName;
+    } else {
+      const fallbackName = [category, type].filter(Boolean).join(" ");
+      if (fallbackName) item.name = fallbackName;
     }
 
-    /**
-     * 名前が空なら最低限 種類 + カテゴリ でも可
-     */
-    if (!item.name) {
-      const fallbackName = [category, type].filter(Boolean).join(" ");
-      if (fallbackName) {
-        item.name = fallbackName;
-      }
+    if (activeLoan) {
+      if (activeLoan.borrower) item.borrower = activeLoan.borrower;
+      if (activeLoan.approvedBy) item.approvedBy = activeLoan.approvedBy;
+      if (activeLoan.loanDate) item.loanDate = activeLoan.loanDate;
     }
 
     items.push(item);
@@ -285,17 +256,16 @@ function main() {
   console.log(`読込シート: ${SHEET_ITEMS}, ${SHEET_LOANS}`);
   console.log(`出力件数: ${items.length}`);
   console.log("状態内訳:", counts);
-
-  const loanPreview = items
-    .filter((x) => x.status === "貸出中")
-    .slice(0, 10)
-    .map((x) => ({
-      itemId: x.itemId,
-      setId: x.setId ?? "",
-      borrower: x.borrower ?? "",
-    }));
-
-  console.log("貸出中サンプル:", loanPreview);
+  console.log(
+    "貸出中一覧:",
+    items
+      .filter((x) => x.status === "貸出中")
+      .map((x) => ({
+        itemId: x.itemId,
+        setId: x.setId ?? "",
+        borrower: x.borrower ?? "",
+      }))
+  );
   console.log(`出力: ${OUTPUT_PUBLIC}`);
   console.log(`出力: ${OUTPUT_DOCS}`);
 }
