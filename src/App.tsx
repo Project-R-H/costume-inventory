@@ -130,7 +130,7 @@ export default function App() {
 
           <div className="infoBar">
             <div>件数：{filtered.length}</div>
-            <div>最終更新：{new Date(data.updatedAt).toISOString().slice(0,10)}</div>          
+            <div>最終更新：{data?.updatedAt ? new Date(data.updatedAt).toISOString().slice(0, 10) : "-"}
 </div>
 
           {err && (
