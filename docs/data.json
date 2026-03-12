@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-12T07:15:23.289Z",
+  "generatedAt": "2026-03-12T07:17:41.733Z",
   "items": [
     {
       "itemId": "ITM-0001",
@@ -109,7 +109,7 @@
       "status": "洗濯中",
       "setId": "SET-0002",
       "category": "メイド",
-      "name": "テスト表示用"
+      "name": "テスト表示用&更新確認"
     },
     {
       "itemId": "ITM-0015",
