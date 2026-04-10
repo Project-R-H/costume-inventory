@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-03-06T08:17:21.305Z",
+  "generatedAt": "2026-04-10T00:57:37.255Z",
   "items": [
     {
       "itemId": "ITM-0001",
@@ -99,14 +99,14 @@
     },
     {
       "itemId": "ITM-0013",
-      "status": "廃棄",
+      "status": "在庫",
       "setId": "SET-0002",
       "category": "メイド",
-      "name": "テスト表示用"
+      "name": "ラベンダー色の制服"
     },
     {
       "itemId": "ITM-0014",
-      "status": "洗濯中",
+      "status": "在庫",
       "setId": "SET-0002",
       "category": "メイド",
       "name": "テスト表示用"
