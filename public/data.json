@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-10T04:19:29.458Z",
+  "generatedAt": "2026-04-10T05:32:16.406Z",
   "items": [
     {
       "itemId": "ITM-0001",
@@ -102,258 +102,443 @@
       "status": "在庫",
       "setId": "SET-0002",
       "category": "メイド",
-      "name": "ラベンダー色の制服"
+      "image": "衣装写真/メイド/ITM-0013.jpg",
+      "name": "ピンクの装飾セット（桜モチーフ・房付きリボン・レース帯）"
     },
     {
       "itemId": "ITM-0014",
       "status": "在庫",
       "setId": "SET-0002",
       "category": "メイド",
-      "name": "テスト表示用"
+      "image": "衣装写真/メイド/ITM-0014.jpg",
+      "name": "ピンク×ホワイトの衣装（グリーン編み上げ・チャイナ風装飾）"
     },
     {
       "itemId": "ITM-0015",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0015.jpg",
+      "name": "ピンクの装飾セット（桜モチーフ・房付きリボン・白リボン）"
     },
     {
       "itemId": "ITM-0016",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0016.jpg",
+      "name": "ピンク×ホワイトの衣装（桜装飾・グリーン編み上げ・白リボン）"
     },
     {
       "itemId": "ITM-0017",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0017.jpg",
+      "name": "ブラックの半袖ワンピース（白丸襟・フロントボタン）"
     },
     {
       "itemId": "ITM-0018",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0018.jpg",
+      "name": "グレーの長袖ワンピース（白丸襟・白カフス）"
     },
     {
       "itemId": "ITM-0019",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0019.jpg",
+      "name": "グレーの半袖ワンピース（白丸襟・黒ボタン・裾フリル）"
     },
     {
       "itemId": "ITM-0020",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0020.jpg",
+      "name": "ダークグレーの半袖ワンピース（黒襟レース・パフスリーブ）"
     },
     {
       "itemId": "ITM-0021",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0021.jpg",
+      "name": "ブラックの半袖ワンピース（赤リボン・猫肉球ブローチ・裾フリル）"
     },
     {
       "itemId": "ITM-0022",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0022.jpg",
+      "name": "レッドのセパレート衣装（ハート柄・ファー付き・編み上げ）"
     },
     {
       "itemId": "ITM-0023",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0023.jpg",
+      "name": "ブラックのジップパーカー（イエローストライプ・バックル付き）"
     },
     {
       "itemId": "ITM-0024",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0024.jpg",
+      "name": "ブラックのセパレート衣装（イエローストライプ・ジップトップス）"
     },
     {
       "itemId": "ITM-0025",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0025.jpg",
+      "name": "ブラックのケープ付き衣装（光沢素材・シルバーライン・バックル留め）"
     },
     {
       "itemId": "ITM-0026",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0026.jpg",
+      "name": "ブラックのセパレート衣装（イエローストライプ・編み上げ・シアースリーブ）"
     },
     {
       "itemId": "ITM-0027",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0027.jpg",
+      "name": "ブラックのセパレート衣装（イエローストライプ・シルバーハーネス・ジップトップス）"
     },
     {
       "itemId": "ITM-0028",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0028.jpg",
+      "name": "グリーンのワンピース（赤ライン・金ボタン・ベルト付き）"
     },
     {
       "itemId": "ITM-0029",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0029.jpg",
+      "name": "ピンクのワンピース（ブルー襟・白リボン・レースフリル）"
     },
     {
       "itemId": "ITM-0030",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0030.jpg",
+      "name": "ミントブルーのワンピース（パープルフリル・編み上げ・胸フリル装飾）"
     },
     {
       "itemId": "ITM-0031",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0031.jpg",
+      "name": "ミントブルーのワンピース（パープルリボン・ニット装飾・フリルエプロン）"
     },
     {
       "itemId": "ITM-0032",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0032.jpg",
+      "name": "パープル×ミントのワンピース（フリルスリーブ・編み上げ・シアーエプロン）"
     },
     {
       "itemId": "ITM-0033",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0033.jpg",
+      "name": "ピンクのワンピース（ブルー襟・シアーエプロン・リボン装飾）"
     },
     {
       "itemId": "ITM-0034",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0034.jpg",
+      "name": "ピンク×ギンガムチェックワンピース（フリルエプロン・レース装飾）"
     },
     {
       "itemId": "ITM-0035",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0035.jpg",
+      "name": "ポリス風ホワイトシャツ（ワッペン付き・半袖）"
     },
     {
       "itemId": "ITM-0036",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0036.jpg",
+      "name": "グレーワンピース（白襟・リボン袖・フレアスカート）"
     },
     {
       "itemId": "ITM-0037",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0037.jpg",
+      "name": "モノトーンギンガムチェックワンピース（白ヨーク・フリル裾）"
     },
     {
       "itemId": "ITM-0038",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0038.jpg",
+      "name": "ブラックワンピース（白襟・シースルー袖・フリル裾）"
     },
     {
       "itemId": "ITM-0039",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0039.jpg",
+      "name": "ブラウンワンピース（白襟・リボン付き・フリル裾）"
     },
     {
       "itemId": "ITM-0040",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0040.jpg",
+      "name": "ブラックワンピース（フリル襟・チェックリボン・長袖）"
     },
     {
       "itemId": "ITM-0041",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0041.jpg",
+      "name": "和風ピンクトップス＋グラデーションスカート（花柄・和装風）"
     },
     {
       "itemId": "ITM-0042",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0042.jpg",
+      "name": "和風ブルートップス＋グラデーションスカート（花柄・和装風）"
     },
     {
       "itemId": "ITM-0043",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0043.jpg",
+      "name": "クラシカルブラウンメイド風ワンピース（コルセット・レースエプロン付き）"
     },
     {
       "itemId": "ITM-0044",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0044.jpg",
+      "name": "ナチュラルブルーエプロン風ワンピース（ギンガム切替・クラシカルデザイン）"
     },
     {
       "itemId": "ITM-0045",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0045.jpg",
+      "name": "ストライプポップセットアップ（ブルー×ホワイト・イエローカラー襟）"
     },
     {
       "itemId": "ITM-0046",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0046.jpg",
+      "name": "クラシックレッドエプロンドレス（ブラックベスト風・レース装飾）"
     },
     {
       "itemId": "ITM-0047",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0047.jpg",
+      "name": "ブラックSWAT風セットアップ（ジップトップス＋ワイドパンツ）"
     },
     {
       "itemId": "ITM-0048",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0048.jpg",
+      "name": "タイガーストライプワンピース（イエロー×ブラック・パフスリーブ）"
     },
     {
       "itemId": "ITM-0049",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0049.jpg",
+      "name": "ブラッククラシックワンピース（ホワイトカラー・シンプルフレア）"
     },
     {
       "itemId": "ITM-0050",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0050.jpg",
+      "name": "和風フラワートップス＋レッドフレアスカート（椿柄・和モダン）"
     },
     {
       "itemId": "ITM-0051",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0051.jpg",
+      "name": "和風椿柄トップス＋ワインレッド袴風ロングスカート（和モダン・落ち着き系）"
     },
     {
       "itemId": "ITM-0052",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0052.jpg",
+      "name": "矢絣柄着物風トップス＋ネイビー袴風ロングスカート（和装・クラシック系）"
     },
     {
       "itemId": "ITM-0053",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0053.jpg",
+      "name": "グレーカモフラ柄ミニワンピース（ミリタリー×フェミニン系）"
     },
     {
       "itemId": "ITM-0054",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0054.jpg",
+      "name": "学ラン風ブラックトップス＋ショートパンツセット（制服・シンプル系）"
     },
     {
       "itemId": "ITM-0055",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0055.jpg",
+      "name": "ホワイトフリルブラウス＋クラシカルワンピース（ガーリー・清楚系）"
     },
     {
       "itemId": "ITM-0056",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0056.jpg",
+      "name": "パープルメイド風フリルワンピース（ガーリー・王道メイド系）"
     },
     {
       "itemId": "ITM-0057",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0057.jpg",
+      "name": "ネイビーメイド風ワンピース＋ホワイトエプロン（クラシック・定番メイド系）"
     },
     {
       "itemId": "ITM-0058",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0058.jpg",
+      "name": "ピンクワンピース＋ホワイトレース襟（ガーリー・清楚系）"
     },
     {
       "itemId": "ITM-0059",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0059.jpg",
+      "name": "タイガー柄セットアップ（ショートトップス＋ショートパンツ）（アニマル・ギャル系）"
     },
     {
       "itemId": "ITM-0060",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0060.jpg",
+      "name": "クラシカルメイド風ワンピース（ベージュ×グリーン・編み上げデザイン）"
     },
     {
       "itemId": "ITM-0061",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0061.jpg",
+      "name": "シンプルクラシックメイドワンピース（ブラック・白襟付き・エプロン仕様）"
     },
     {
       "itemId": "ITM-0062",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0062.jpg",
+      "name": "クラシックチェックケープ風ワンピース（フード付き・ベージュ×レッドライン）"
     },
     {
       "itemId": "ITM-0063",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0063.jpg",
+      "name": "セーラーカラーワンピース（パープル・半袖・フリル裾デザイン）"
     },
     {
       "itemId": "ITM-0064",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0064.jpg",
+      "name": "カラフルピエロコスチューム（マルチカラー・ポンポン付き・ストライプパンツ）"
     },
     {
       "itemId": "ITM-0065",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0065.jpg",
+      "name": "ウィンターファー付きワンピース（ブルーベロア・ホワイトボア・リボン付き）"
     },
     {
       "itemId": "ITM-0066",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0066.jpg",
+      "name": "パステルクラシックワンピース（ミントグリーン・白襟・パフスリーブ）"
     },
     {
       "itemId": "ITM-0067",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0067.jpg",
+      "name": "ロリータ風フリルワンピース（くすみピンク・レース装飾・リボン付き）"
     },
     {
       "itemId": "ITM-0068",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0068.jpg",
+      "name": "アニメ風バトルコスチュームトップス（オレンジ・Vネック・インナー付き）"
     },
     {
       "itemId": "ITM-0069",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0069.jpg",
+      "name": "アニメ風バトルコスチュームトップス（背面：亀マーク入り・オレンジ）"
     },
     {
       "itemId": "ITM-0070",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0070.jpg",
+      "name": "クラシック風メイドワンピース（ブラック・フリルネック・半袖）"
     },
     {
       "itemId": "ITM-0071",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0071.jpg",
+      "name": "和風はっぴ風トップス（レッド×ブラック・オープンフロント）"
     },
     {
       "itemId": "ITM-0072",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0072.jpg",
+      "name": "和風はっぴ風トップス（レッド・背面ロゴ入り）"
     },
     {
       "itemId": "ITM-0073",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0073.jpg",
+      "name": "クラシカルロリータ風ワンピース（ネイビー・レース襟・装飾リボン）"
     },
     {
       "itemId": "ITM-0074",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0074.jpg",
+      "name": "ゴシック風メイドコスチューム（ブラック×パープル・十字架モチーフ）"
     },
     {
       "itemId": "ITM-0075",
-      "status": "不明"
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0075.jpg",
+      "name": "サンタ風チャイナドレスコスチューム（レッド・ファー付きフード）"
     },
     {
       "itemId": "ITM-0076",
