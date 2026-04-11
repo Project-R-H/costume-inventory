@@ -95,14 +95,19 @@ main { padding: 16px 0 40px; }
 
 .thumb {
   width: 100%;
-  aspect-ratio: 4 / 3;
   background: #eef2f7;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
 }
 
-.thumb img { width: 100%; height: 100%; object-fit: contain; }
+.thumb img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 
 .body { padding: 12px; display: grid; gap: 8px; }
 
