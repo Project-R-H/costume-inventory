@@ -174,7 +174,8 @@ function main() {
 
     if (!itemId) continue;
 
-    if (publicFlag && publicFlag !== "公開") {
+    // 「公開」だけ表示。空欄も非表示。
+    if (publicFlag !== "公開") {
       continue;
     }
 
