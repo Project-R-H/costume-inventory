@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import type { DataFile } from "./types";
 import { withBase } from "./lib/imagePath";
 
@@ -37,11 +37,6 @@ const STYLE_TAGS = [
   "フェミニン",
 ];
 
-function stop(e: React.MouseEvent) {
-  e.preventDefault();
-  e.stopPropagation();
-}
-
 function statusClass(status: string) {
   switch (status) {
     case "在庫":
@@ -60,7 +55,7 @@ function statusClass(status: string) {
 function normalizeTags(text?: string): string[] {
   if (!text) return [];
   return text
-    .split(/[・,，\/\s]+/)
+    .split(/[・,，／/\s]+/)
     .map((x) => x.trim())
     .filter(Boolean);
 }
@@ -71,14 +66,9 @@ function detectTagsFromItem(it: {
   note?: string;
 }) {
   const source = [it.category ?? "", it.name ?? "", it.note ?? ""].join(" ");
-
   const colors = COLOR_TAGS.filter((tag) => source.includes(tag));
   const styles = STYLE_TAGS.filter((tag) => source.includes(tag));
-
-  return {
-    colors,
-    styles,
-  };
+  return { colors, styles };
 }
 
 export default function App() {
@@ -93,15 +83,6 @@ export default function App() {
   const [setOnly, setSetOnly] = useState<string>(ALL);
 
   const [openSetId, setOpenSetId] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (!openSetId) return;
-    const prev = document.body.style.overflow;
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.body.style.overflow = prev;
-    };
-  }, [openSetId]);
 
   useEffect(() => {
     fetch(withBase("data.json"), { cache: "no-store" })
@@ -215,10 +196,7 @@ export default function App() {
               ))}
             </select>
 
-            <select
-              value={category}
-              onChange={(e) => setCategory(e.target.value)}
-            >
+            <select value={category} onChange={(e) => setCategory(e.target.value)}>
               <option value={ALL}>カテゴリ：全部</option>
               {categories.map((c) => (
                 <option key={c} value={c}>
@@ -236,10 +214,7 @@ export default function App() {
               ))}
             </select>
 
-            <select
-              value={styleTag}
-              onChange={(e) => setStyleTag(e.target.value)}
-            >
+            <select value={styleTag} onChange={(e) => setStyleTag(e.target.value)}>
               <option value={ALL}>系統：全部</option>
               {availableStyles.map((s) => (
                 <option key={s} value={s}>
@@ -248,10 +223,7 @@ export default function App() {
               ))}
             </select>
 
-            <select
-              value={setOnly}
-              onChange={(e) => setSetOnly(e.target.value)}
-            >
+            <select value={setOnly} onChange={(e) => setSetOnly(e.target.value)}>
               <option value={ALL}>セット：全部</option>
               <option value="セット有">セット：有</option>
               <option value="セット無">セット：無</option>
@@ -281,20 +253,11 @@ export default function App() {
               const img = it.image ? withBase(it.image) : undefined;
               const parsedCategoryTags = normalizeTags(it.category);
               const detected = detectTagsFromItem(it);
-
-              const openSet = () => {
-                if (!it.setId) return;
-                setOpenSetId(it.setId);
-              };
+              const hasSet = !!it.setId;
 
               return (
                 <div className="card" key={it.itemId}>
-                  <div
-                    className="thumb"
-                    style={{ cursor: it.setId ? "pointer" : "default" }}
-                    onClick={openSet}
-                    title={it.setId ? "クリックでセット一覧" : undefined}
-                  >
+                  <div className="thumb">
                     {img ? (
                       <img src={img} alt={it.itemId} loading="lazy" />
                     ) : (
@@ -344,19 +307,16 @@ export default function App() {
                         </div>
                       )}
 
-                      {it.setId && (
-                        <div className="mini">
-                          セットID：
-                          <a
-                            href="#"
-                            onClick={(e) => {
-                              stop(e);
-                              openSet();
-                            }}
-                            style={{ marginLeft: 6 }}
+                      {hasSet && it.setId && (
+                        <div className="setBox">
+                          <div className="mini">セットID：{it.setId}</div>
+                          <button
+                            type="button"
+                            className="setButton"
+                            onClick={() => setOpenSetId(it.setId!)}
                           >
-                            {it.setId}（開く）
-                          </a>
+                            セット内容を見る
+                          </button>
                         </div>
                       )}
                     </div>
@@ -375,7 +335,11 @@ export default function App() {
           <div className="modal" onClick={(e) => e.stopPropagation()}>
             <div className="modalHeader">
               <div className="modalTitle">セット：{openSetId}</div>
-              <button className="modalClose" onClick={() => setOpenSetId(null)}>
+              <button
+                type="button"
+                className="modalClose"
+                onClick={() => setOpenSetId(null)}
+              >
                 閉じる
               </button>
             </div>

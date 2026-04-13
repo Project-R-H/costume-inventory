@@ -8,8 +8,6 @@ export type CostumeItem = {
   status: CostumeStatus;
   note?: string;
   image?: string;
-
-  // ここは将来「公開で隠す」も可能（今は表示しない構成）
   borrower?: string;
   approvedBy?: string;
   loanDate?: string;
