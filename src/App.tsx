@@ -16,7 +16,11 @@ const COLOR_TAGS = [
   "緑",
   "ラベンダー",
   "ラベンダーブルー",
-  "ミントブルー",
+  "グレー",
+  "チェック",
+  "ブラウン",
+  "ミリタリー",
+  "ネイビー",
 ];
 
 const STYLE_TAGS = [
@@ -28,6 +32,9 @@ const STYLE_TAGS = [
   "ゴシック",
   "フリル",
   "ドレス",
+  "ミリタリー",
+  "モダン",
+  "フェミニン",
 ];
 
 function stop(e: React.MouseEvent) {
@@ -152,11 +159,9 @@ export default function App() {
       const detected = detectTagsFromItem(it);
 
       if (status !== ALL && it.status !== status) return false;
-
       if (category !== ALL && !tagParts.includes(category)) return false;
       if (color !== ALL && !detected.colors.includes(color)) return false;
       if (styleTag !== ALL && !detected.styles.includes(styleTag)) return false;
-
       if (setOnly === "セット有" && !hasSet) return false;
       if (setOnly === "セット無" && hasSet) return false;
 
