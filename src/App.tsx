@@ -35,6 +35,7 @@ const STYLE_TAGS = [
   "ミリタリー",
   "モダン",
   "フェミニン",
+ "ナース",
 ];
 
 function statusClass(status: string) {

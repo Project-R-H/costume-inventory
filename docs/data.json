@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-17T04:52:45.061Z",
+  "generatedAt": "2026-04-17T07:12:50.920Z",
   "items": [
     {
       "itemId": "ITM-0001",
@@ -658,6 +658,50 @@
       "category": "メイド",
       "image": "衣装写真/メイド/ITM-0092.jpg",
       "name": "ネイビーポリスガールドレス"
+    },
+    {
+      "itemId": "ITM-0093",
+      "status": "貸出中",
+      "setId": "SET-0003",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0093.jpg",
+      "name": "ミントブルー ナース風ワンピース",
+      "borrower": "大崎さん",
+      "approvedBy": "増本",
+      "loanDate": "2026-04-16"
+    },
+    {
+      "itemId": "ITM-0094",
+      "status": "貸出中",
+      "setId": "SET-0003",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0094.jpg",
+      "name": "水色 ナース風フリルワンピース",
+      "borrower": "大崎さん",
+      "approvedBy": "増本",
+      "loanDate": "2026-04-16"
+    },
+    {
+      "itemId": "ITM-0095",
+      "status": "貸出中",
+      "setId": "SET-0003",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0095.jpg",
+      "name": "水色 シンプルナースワンピース",
+      "borrower": "大崎さん",
+      "approvedBy": "増本",
+      "loanDate": "2026-04-16"
+    },
+    {
+      "itemId": "ITM-0096",
+      "status": "貸出中",
+      "setId": "SET-0003",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0096.jpg",
+      "name": "ナース小物セット（聴診器）",
+      "borrower": "大崎さん",
+      "approvedBy": "増本",
+      "loanDate": "2026-04-16"
     }
   ]
 }
