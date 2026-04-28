@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-28T08:40:47.217Z",
+  "generatedAt": "2026-04-28T08:41:21.542Z",
   "items": [
     {
       "itemId": "ITM-0001",
@@ -702,6 +702,132 @@
       "borrower": "大崎さん",
       "approvedBy": "増本",
       "loanDate": "2026-04-16"
+    },
+    {
+      "itemId": "ITM-0097",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0097.jpg",
+      "name": "ブラウンチェックのスチームパンク風衣装"
+    },
+    {
+      "itemId": "ITM-0098",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0098.jpg",
+      "name": "ブラウンギンガムのチョコメイド衣装"
+    },
+    {
+      "itemId": "ITM-0099",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0099.jpg",
+      "name": "ミントブルーの和風チャイナ衣装"
+    },
+    {
+      "itemId": "ITM-0100",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0100.jpg",
+      "name": "ピンクのクラシカルロリータワンピース"
+    },
+    {
+      "itemId": "ITM-0101",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0101.jpg",
+      "name": "ホワイト×ラベンダーの童話風ワンピース"
+    },
+    {
+      "itemId": "ITM-0102",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0102.jpg",
+      "name": "水色ストライプのアイドル風衣装"
+    },
+    {
+      "itemId": "ITM-0103",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0103.jpg",
+      "name": "グレーストライプのクラシカルメイド服"
+    },
+    {
+      "itemId": "ITM-0104",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0104.jpg",
+      "name": "ゴールド花柄のチャイナドレス"
+    },
+    {
+      "itemId": "ITM-0105",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0105.jpg",
+      "name": "水色リボンのフリルワンピース"
+    },
+    {
+      "itemId": "ITM-0106",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0106.jpg",
+      "name": "紫花柄のチャイナドレス"
+    },
+    {
+      "itemId": "ITM-0107",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0107.jpg",
+      "name": "黒×赤のチャイナ風ワンピース"
+    },
+    {
+      "itemId": "ITM-0108",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0108.jpg",
+      "name": "赤花柄のチャイナ風ワンピース"
+    },
+    {
+      "itemId": "ITM-0109",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0109.jpg",
+      "name": "赤龍柄のチャイナドレス"
+    },
+    {
+      "itemId": "ITM-0110",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0110.jpg",
+      "name": "ピンクサテンのクラシカルメイド服"
+    },
+    {
+      "itemId": "ITM-0111",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0111.jpg",
+      "name": "水色サテンの黒リボンワンピース"
+    },
+    {
+      "itemId": "ITM-0112",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0112.jpg",
+      "name": "赤×黒チュールのチャイナ風ワンピース"
+    },
+    {
+      "itemId": "ITM-0113",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0113.jpg",
+      "name": "ワインレッド龍柄のチャイナドレス"
+    },
+    {
+      "itemId": "ITM-0114",
+      "status": "在庫",
+      "category": "メイド",
+      "image": "衣装写真/メイド/ITM-0114.jpg",
+      "name": "黒×赤金のチャイナ風ワンピース"
     }
   ]
 }
