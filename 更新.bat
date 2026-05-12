@@ -1,82 +1,138 @@
 @echo off
 chcp 65001 > nul
-title Project-R 衣装管理 更新
+title Project-R costume update
 
 cd /d C:\Users\user\Desktop\ProjectR-costume
 
 echo =====================================
-echo Project-R 衣装管理サイト 更新開始
+echo Project-R costume site update start
 echo =====================================
 echo.
 
-echo [事前確認] public\衣装写真 が残っていないか確認
-if exist "public\衣装写真" (
+echo [CHECK] current folder
+echo %cd%
+echo.
+
+echo [CHECK] block dangerous zip files
+dir /b *.zip >nul 2>nul
+if %errorlevel%==0 (
     echo.
-    echo エラー: public\衣装写真 が残っています。
-    echo このフォルダがあると、元画像がそのまま公開されます。
+    echo ERROR: zip file exists in this project folder.
+    echo Delete zip files before updating.
     echo.
-    echo 対応:
-    echo 1. public\衣装写真 を C:\Users\user\Desktop\data\衣装写真 へ移動
-    echo 2. public\衣装写真 を削除
-    echo 3. 再度このbatを実行
+    dir /b *.zip
     echo.
     pause
     exit /b 1
 )
 
+echo OK: no zip file
 echo.
-echo [1/5] Excelから公開JSON・公開用画像を生成
+
+echo [CHECK] remove old public original image folders if exist
+if exist "docs\衣装写真" (
+    echo delete docs old image folder
+    rmdir /s /q "docs\衣装写真"
+)
+
+if exist "public\衣装写真" (
+    echo.
+    echo ERROR: public old original image folder exists.
+    echo Move or delete public\衣装写真 first.
+    echo.
+    pause
+    exit /b 1
+)
+
+echo OK: old original image folders checked
+echo.
+
+echo =====================================
+echo [1/5] Generate public data and public images
+echo =====================================
+echo.
+
 call npm run gen
 if errorlevel 1 (
     echo.
-    echo エラー: JSON生成または画像生成に失敗しました
+    echo ERROR: npm run gen failed.
+    echo.
+    echo Check:
+    echo - Close Excel file
+    echo - C:\Users\user\Desktop\data has costume Excel
+    echo - C:\Users\user\Desktop\data has costume photo folder
+    echo - public original image folder is not inside this project
+    echo.
     pause
     exit /b 1
 )
 
 echo.
-echo [2/5] サイトをビルド
+echo =====================================
+echo [2/5] Build site
+echo =====================================
+echo.
+
 call npm run build
 if errorlevel 1 (
     echo.
-    echo エラー: buildに失敗しました
+    echo ERROR: npm run build failed.
+    echo.
     pause
     exit /b 1
 )
 
 echo.
-echo [安全確認] docs\衣装写真 があれば削除
+echo [CHECK] delete old docs original image folder after build if exists
 if exist "docs\衣装写真" (
     rmdir /s /q "docs\衣装写真"
 )
 
 echo.
-echo [3/5] Gitに追加
+echo =====================================
+echo [3/5] Git add
+echo =====================================
+echo.
+
 git add -A
 if errorlevel 1 (
     echo.
-    echo エラー: git add に失敗しました
+    echo ERROR: git add failed.
+    echo.
     pause
     exit /b 1
 )
 
 echo.
-echo [4/5] 変更確認
+echo =====================================
+echo [4/5] Check changes
+echo =====================================
+echo.
+
 git diff --cached --quiet
 if %errorlevel%==0 (
-    echo 変更がないため commit / push をスキップします
+    echo No changes.
+    echo Nothing to push.
     echo.
-    echo 完了しました
+    git status
+    echo.
     pause
     exit /b 0
 )
 
+echo Changes found.
 echo.
-echo [5/5] commitしてpush
-git commit -m "update public costume data"
+
+echo =====================================
+echo [5/5] Commit and push
+echo =====================================
+echo.
+
+git commit -m "update costume public site"
 if errorlevel 1 (
     echo.
-    echo エラー: git commit に失敗しました
+    echo ERROR: git commit failed.
+    echo.
     pause
     exit /b 1
 )
@@ -84,14 +140,20 @@ if errorlevel 1 (
 git push
 if errorlevel 1 (
     echo.
-    echo エラー: git push に失敗しました
+    echo ERROR: git push failed.
+    echo.
     pause
     exit /b 1
 )
 
 echo.
 echo =====================================
-echo 更新完了
-echo GitHub Pages 反映まで少し待ってください
+echo Update complete
 echo =====================================
+echo.
+echo GitHub Pages may take a few minutes.
+echo Check the public site with Ctrl + F5.
+echo.
+git status
+echo.
 pause
