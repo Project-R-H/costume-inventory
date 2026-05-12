@@ -1,182 +1,56 @@
-<<<<<<< HEAD
-# 衣装管理サイト（閲覧用）
+# Project-R広島 衣装一覧サイト
 
-このリポジトリは、衣装の在庫状況を閲覧するためのサイトです。
+Project-R広島で管理している衣装を、閲覧用に公開するための静的サイトです。
 
-GitHub Pages を利用して公開しています。
+## 公開内容
 
-サイトでは以下の情報を確認できます。
+このサイトでは、公開対象として設定された衣装のみを掲載しています。
 
-・衣装の画像  
-・衣装ID  
-・カテゴリ  
-・状態（在庫 / 貸出中 / 洗濯中 / 廃棄 など）  
-・セットID  
-・セット一覧  
+掲載される主な情報は以下です。
 
----
+- 公開名
+- 衣装ID
+- カテゴリ
+- 状態
+- セット情報
+- 公開用画像
 
-# システム構成
+## 公開しない情報
 
-衣装管理.xlsx  
-↓  
-JSON生成（npm run gen）  
-↓  
-サイト生成（npm run build）  
-↓  
-GitHub Pages公開
+以下の情報は公開データには含めていません。
 
----
+- 貸出先
+- 承認者
+- 貸出日
+- 返却日
+- 備考
+- Excel原本
+- 内部管理用メモ
+- 更新手順
+- ローカルPC上のファイルパス
 
-# フォルダ構成
+## 画像について
 
-ProjectR-costume
-├ public
-│ ├ data.json
-│ └ 衣装写真
-│
-├ docs（公開サイト）
-│ ├ index.html
-│ ├ data.json
-│ ├ assets
-│ └ 衣装写真
-│
-├ scripts
-│ └ excel_to_json.ts
-│
-├ src
-│ └ サイトソースコード
-│
-└ 衣装管理.xlsx
+公開用画像は、元画像をそのまま公開せず、公開用に再生成した画像を使用しています。
 
----
+また、画像ファイル名は元の管理番号形式ではなく、推測されにくいランダム名で出力しています。
 
-# サイトの機能
+## 公開データについて
 
-・衣装一覧表示  
-・検索（ID / セットID / メモ など）  
-・カテゴリ絞り込み  
-・状態絞り込み  
-・セットあり / なし  
-・セットクリックで一覧表示  
+公開サイトでは、閲覧に必要な情報のみを `data.json` として出力しています。
 
----
+画面上に表示していない内部情報は、公開用JSONには含めない運用としています。
 
-# 更新方法（通常）
+## サイト構成
 
-衣装を追加したり状態を変更した場合は、以下を行います。
+このサイトは、静的サイトとして構成しています。
 
-1 Excelを更新  
-2 JSONを生成  
-3 サイトをビルド  
-4 GitHubにアップロード  
+- React
+- Vite
+- GitHub Pages
 
----
+## 注意事項
 
-# 更新手順
+本リポジトリには、内部管理用のExcel原本、更新用bat、運用マニュアル、ログファイル等は含めません。
 
-PowerShellで以下を実行します。
-
-npm run gen
-npm run build
-
-git add -A
-git commit -m "update"
-git push origin main
-
-これでサイトが更新されます。
-
-GitHub Pagesは数秒〜1分ほどで反映されます。
-
----
-
-# Excel更新時の注意
-
-・衣装IDは重複させない  
-・画像ファイル名は衣装IDと同じにする  
-
-例  
-ITM-0001.jpg  
-ITM-0002.jpg  
-
----
-
-# 画像フォルダ
-
-衣装写真
-├ メイド
-├ アイドル
-
-例  
-衣装写真/メイド/ITM-0001.jpg
-
----
-
-# セット衣装
-
-セットIDがある衣装は  
-クリックするとセット一覧が表示されます。
-
-例  
-SET-0001
-
-ITM-0001  
-ITM-0002  
-ITM-0003  
-
----
-
-# 開発環境
-
-Node.js 必須
-
-確認  
-node -v  
-npm -v  
-
----
-
-# 初回セットアップ
-
-npm install
-
----
-
-# JSON生成
-
-npm run gen
-
----
-
-# サイトビルド
-
-npm run build
-
----
-
-# 公開URL
-
-GitHub Pages  
-https://project-r-h.github.io/costume-inventory/
-
----
-
-# 管理方針
-
-・Excelが正データ  
-・サイトは閲覧専用  
-・ExcelはGitHubに公開しない  
-
----
-
-# 更新の最短コマンド
-
-npm run gen
-npm run build
-git add -A
-git commit -m "update"
-git push origin main
-=======
-# costume-inventory
-Costume inventory and lending management system for Project-R.
->>>>>>> 0e24ea006dcf8993d6fbd3ac561c6f0ac2a8a1fc
+公開対象外の情報をリポジトリに含めないよう、運用時に確認しています。
