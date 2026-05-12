@@ -1,868 +1,856 @@
 {
-  "generatedAt": "2026-05-12T00:25:39.503Z",
+  "generatedAt": "2026-05-12T06:53:06.380Z",
   "items": [
     {
       "itemId": "ITM-0001",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0001.jpg",
-      "name": "ミントブルーメイド服（紫フリルエプロン）"
+      "name": "ミントブルーメイド服（紫フリルエプロン）",
+      "image": "assets/costumes/83026e41ded39c90c40c57d8d824f25fc1e9.jpg"
     },
     {
       "itemId": "ITM-0002",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0002.jpg",
-      "name": "ミントブルーワンピース（紫フリル裾）"
+      "name": "ミントブルーワンピース（紫フリル裾）",
+      "image": "assets/costumes/cad46e93c17677e2a56148e847e3aea94a6f.jpg"
     },
     {
       "itemId": "ITM-0003",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0003.jpg",
-      "name": "ミントブルーメイド服（襟付きエプロン）"
+      "name": "ミントブルーメイド服（襟付きエプロン）",
+      "image": "assets/costumes/f6c0e8f31fd1a7aba2413b71f14b7f8bbab0.jpg"
     },
     {
       "itemId": "ITM-0004",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0004.jpg",
-      "name": "ミントブルーワンピース（襟付き）"
+      "name": "ミントブルーワンピース（襟付き）",
+      "image": "assets/costumes/a697dace3bc620f01050ecc7db6d184586ef.jpg"
     },
     {
       "itemId": "ITM-0005",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0005.jpg",
-      "name": "ミントブルーメイド服（リボン付フルセット）"
+      "name": "ミントブルーメイド服（リボン付フルセット）",
+      "image": "assets/costumes/690b08ff37acf8b85693c4dcde4d77a6f3d4.jpg"
     },
     {
       "itemId": "ITM-0006",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0006.jpg",
-      "name": "ミントブルーワンピース（リボン付）"
+      "name": "ミントブルーワンピース（リボン付）",
+      "image": "assets/costumes/2c4c4625b4cdbb1c156e6989e49bbf270b92.jpg"
     },
     {
       "itemId": "ITM-0007",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0007.jpg",
-      "name": "ラベンダーメイド服（ミントリボン）"
+      "name": "ラベンダーメイド服（ミントリボン）",
+      "image": "assets/costumes/f2781480ae6e2096cd54db3f78c464400457.jpg"
     },
     {
       "itemId": "ITM-0008",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0008.jpg",
-      "name": "ラベンダーワンピース（ミントリボン）"
+      "name": "ラベンダーワンピース（ミントリボン）",
+      "image": "assets/costumes/d9dfeca3582f51491fb1bd7a75170609a29f.jpg"
     },
     {
       "itemId": "ITM-0009",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0009.jpg",
-      "name": "ミントブルーメイド（白襟エプロン）"
+      "name": "ミントブルーメイド（白襟エプロン）",
+      "image": "assets/costumes/5826920a83973d0e413b30c69e6af722a71e.jpg"
     },
     {
       "itemId": "ITM-0010",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0010.jpg",
-      "name": "ミントブルーメイド（白襟シンプル"
+      "name": "ミントブルーメイド（白襟シンプル",
+      "image": "assets/costumes/3af1b6f7e19635b6c7ce8e9e5c3640eaca56.jpg"
     },
     {
       "itemId": "ITM-0011",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0011.jpg",
-      "name": "ラベンダーメイド（チュールリボンエプロン）"
+      "name": "ラベンダーメイド（チュールリボンエプロン）",
+      "image": "assets/costumes/c883e0e64d3ac045fa3bc2349caee42661b0.jpg"
     },
     {
       "itemId": "ITM-0012",
       "status": "在庫",
       "setId": "SET-0001",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0012.jpg",
-      "name": "ラベンダーメイド（シンプルリボン）"
+      "name": "ラベンダーメイド（シンプルリボン）",
+      "image": "assets/costumes/c74f1ef0dd50692e2e117704ca6ba1339081.jpg"
     },
     {
       "itemId": "ITM-0013",
       "status": "在庫",
       "setId": "SET-0002",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0013.jpg",
-      "name": "桜モチーフ装飾セット（ピンクリボン）"
+      "name": "桜モチーフ装飾セット（ピンクリボン）",
+      "image": "assets/costumes/e543d67f220169360d6f91af675ece5d3ce2.jpg"
     },
     {
       "itemId": "ITM-0014",
       "status": "在庫",
       "setId": "SET-0002",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0014.jpg",
-      "name": "ピンクチャイナ風衣装（編み上げ装飾）"
+      "name": "ピンクチャイナ風衣装（編み上げ装飾）",
+      "image": "assets/costumes/3a2ffeb40db03e41afd2a9c958359932f7ce.jpg"
     },
     {
       "itemId": "ITM-0015",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0015.jpg",
-      "name": "ブラックメイド（白襟クラシック）"
+      "name": "ブラックメイド（白襟クラシック）",
+      "image": "assets/costumes/8c86e26af54acafc0a89f66cd7bc1c2de25a.jpg"
     },
     {
       "itemId": "ITM-0016",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0016.jpg",
-      "name": "グレーワンピース（白襟ロングスリーブ）"
+      "name": "グレーワンピース（白襟ロングスリーブ）",
+      "image": "assets/costumes/1ba7fcb1a603f1ddff27fdae70f99b8dacbe.jpg"
     },
     {
       "itemId": "ITM-0017",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0017.jpg",
-      "name": "グレーワンピース（白襟・リボン袖）"
+      "name": "グレーワンピース（白襟・リボン袖）",
+      "image": "assets/costumes/48e89237df8dbcc0c433635cc3314472c039.jpg"
     },
     {
       "itemId": "ITM-0018",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0018.jpg",
-      "name": "ダークグレーワンピース（黒襟レース）"
+      "name": "ダークグレーワンピース（黒襟レース）",
+      "image": "assets/costumes/fa3d74698eedc65e119604399475b6f37177.jpg"
     },
     {
       "itemId": "ITM-0019",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0019.jpg",
-      "name": "黒×赤リボンワンピース（猫モチーフ）"
+      "name": "黒×赤リボンワンピース（猫モチーフ）",
+      "image": "assets/costumes/1827615760519de549e44a0047728960f9a7.jpg"
     },
     {
       "itemId": "ITM-0020",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0020.jpg",
-      "name": "赤ベルベットセット（ハート×ファー）"
+      "name": "赤ベルベットセット（ハート×ファー）",
+      "image": "assets/costumes/b8d30f0fbd43004980a642c546f32e513d7d.jpg"
     },
     {
       "itemId": "ITM-0021",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0021.jpg",
-      "name": "ブラック×イエローハーネスジャケット"
+      "name": "ブラック×イエローハーネスジャケット",
+      "image": "assets/costumes/8604c472d49ed9fe43e4248df8d4c3f167e2.jpg"
     },
     {
       "itemId": "ITM-0022",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0022.jpg",
-      "name": "ブラック×イエローセパレート（ショートセット）"
+      "name": "ブラック×イエローセパレート（ショートセット）",
+      "image": "assets/costumes/204f6214c8811601444fac14fd7541761c29.jpg"
     },
     {
       "itemId": "ITM-0023",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0023.jpg",
-      "name": "ブラックハーネスケープ（ストリートセット）"
+      "name": "ブラックハーネスケープ（ストリートセット）",
+      "image": "assets/costumes/c0c130de6ec31383084faa9bbff30e0444e9.jpg"
     },
     {
       "itemId": "ITM-0024",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0024.jpg",
-      "name": "ブラック×イエローハーネスセット（ロングパンツ）"
+      "name": "ブラック×イエローハーネスセット（ロングパンツ）",
+      "image": "assets/costumes/a23b323861d893b44b0985f7850c161b6857.jpg"
     },
     {
       "itemId": "ITM-0025",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0025.jpg",
-      "name": "ブラック×イエローハーネスセット（スカート）"
+      "name": "ブラック×イエローハーネスセット（スカート）",
+      "image": "assets/costumes/10b874227381ea69014de293e8f936a808b4.jpg"
     },
     {
       "itemId": "ITM-0026",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0026.jpg",
-      "name": "グリーン×レッドライン ミリタリーワンピース"
+      "name": "グリーン×レッドライン ミリタリーワンピース",
+      "image": "assets/costumes/832976c1b7d3349fea3408f1aeb2eb9c3d98.jpg"
     },
     {
       "itemId": "ITM-0027",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0027.jpg",
-      "name": "ピンク×ブルー襟 クラシカルメイドワンピース"
+      "name": "ピンク×ブルー襟 クラシカルメイドワンピース",
+      "image": "assets/costumes/420598e1d96e65b03520ae08dc94fc253d1a.jpg"
     },
     {
       "itemId": "ITM-0028",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0028.jpg",
-      "name": "ターコイズ×パープル フリルメイド衣装（胸装飾タイプ）"
+      "name": "ターコイズ×パープル フリルメイド衣装（胸装飾タイプ）",
+      "image": "assets/costumes/fe92a0504f4fbd10f900ca72766d46dc31d9.jpg"
     },
     {
       "itemId": "ITM-0029",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0029.jpg",
-      "name": "ニット装飾メイド衣装"
+      "name": "ニット装飾メイド衣装",
+      "image": "assets/costumes/70342f2fbf74fe62cb5e011f46ead3d57ecb.jpg"
     },
     {
       "itemId": "ITM-0030",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0030.jpg",
-      "name": "ターコイズ×パープル フリルメイド衣装"
+      "name": "ターコイズ×パープル フリルメイド衣装",
+      "image": "assets/costumes/512165d2b3319819c3557f87ceb49153e10f.jpg"
     },
     {
       "itemId": "ITM-0031",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0031.jpg",
-      "name": "ピンク×水色 フリルメイド衣装"
+      "name": "ピンク×水色 フリルメイド衣装",
+      "image": "assets/costumes/61dc04893f6308acddd9a3bc42eaa97f34df.jpg"
     },
     {
       "itemId": "ITM-0032",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0032.jpg",
-      "name": "ピンク×水色 ギンガムメイド衣装"
+      "name": "ピンク×水色 ギンガムメイド衣装",
+      "image": "assets/costumes/bac5a5e4914403e9bcf3dba224135f010246.jpg"
     },
     {
       "itemId": "ITM-0033",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0033.jpg",
-      "name": "ホワイトポリス風シャツ制服"
+      "name": "ホワイトポリス風シャツ制服",
+      "image": "assets/costumes/fdd2e14a087e50235aef667456571b584357.jpg"
     },
     {
       "itemId": "ITM-0034",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0034.jpg",
-      "name": "グレークラシックワンピース（丸襟）"
+      "name": "グレークラシックワンピース（丸襟）",
+      "image": "assets/costumes/d294875712b9f02cc030aeeffcc0628d517e.jpg"
     },
     {
       "itemId": "ITM-0035",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0035.jpg",
-      "name": "モノトーンギンガムワンピース（クラシック調）"
+      "name": "モノトーンギンガムワンピース（クラシック調）",
+      "image": "assets/costumes/95ea0af8fff656f65925d6ce77f017d1e022.jpg"
     },
     {
       "itemId": "ITM-0036",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0036.jpg",
-      "name": "ブラックシンプルワンピース（白襟クラシック）"
+      "name": "ブラックシンプルワンピース（白襟クラシック）",
+      "image": "assets/costumes/978c28b5b9b3835995e8c7a89dc20fc79a0e.jpg"
     },
     {
       "itemId": "ITM-0037",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0037.jpg",
-      "name": "ブラウンクラシックワンピース（リボン付き）"
+      "name": "ブラウンクラシックワンピース（リボン付き）",
+      "image": "assets/costumes/2af3bca30f2fe950ae3e51928df0d86dfe97.jpg"
     },
     {
       "itemId": "ITM-0038",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0038.jpg",
-      "name": "ブラックフリルワンピース（クラシックメイド風）"
+      "name": "ブラックフリルワンピース（クラシックメイド風）",
+      "image": "assets/costumes/37f36b6b2c900f99aab4729d9da2d9ba88cf.jpg"
     },
     {
       "itemId": "ITM-0039",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0039.jpg",
-      "name": "ピンク和風コスチューム（花柄・着物風）"
+      "name": "ピンク和風コスチューム（花柄・着物風）",
+      "image": "assets/costumes/8c0fde0410a063dfecd6552605d7b4aba697.jpg"
     },
     {
       "itemId": "ITM-0040",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0040.jpg",
-      "name": "ブルー和風コスチューム（花柄）"
+      "name": "ブルー和風コスチューム（花柄）",
+      "image": "assets/costumes/1ca7081e9ee30da3bbf0178597b19b29e941.jpg"
     },
     {
       "itemId": "ITM-0041",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0041.jpg",
-      "name": "ブラウンクラシックメイド服"
+      "name": "ブラウンクラシックメイド服",
+      "image": "assets/costumes/29124e66f6cf30a623b039b074a638e5af1d.jpg"
     },
     {
       "itemId": "ITM-0042",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0042.jpg",
-      "name": "ブルーギンガムクラシカルワンピース"
+      "name": "ブルーギンガムクラシカルワンピース",
+      "image": "assets/costumes/84020dfe36e46954bcc8571f286cca218c3b.jpg"
     },
     {
       "itemId": "ITM-0043",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0043.jpg",
-      "name": "ブルーストライプポップセットアップ"
+      "name": "ブルーストライプポップセットアップ",
+      "image": "assets/costumes/756121a67e3327df817a1d7769ae168ee3b1.jpg"
     },
     {
       "itemId": "ITM-0044",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0044.jpg",
-      "name": "レッドクラシックメイドワンピース"
+      "name": "レッドクラシックメイドワンピース",
+      "image": "assets/costumes/c8faf9425034dc04225c74522b7b82b5d603.jpg"
     },
     {
       "itemId": "ITM-0045",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0045.jpg",
-      "name": "ブラックSWATコスチューム"
+      "name": "ブラックSWATコスチューム",
+      "image": "assets/costumes/6238be20f5ccdc8429eb8bd7228a0864d91f.jpg"
     },
     {
       "itemId": "ITM-0046",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0046.jpg",
-      "name": "イエロータイガーガールワンピース"
+      "name": "イエロータイガーガールワンピース",
+      "image": "assets/costumes/fbe43b2e4b1e3a520739a3cb29627417131e.jpg"
     },
     {
       "itemId": "ITM-0047",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0047.jpg",
-      "name": "椿柄和風モダンコーデ"
+      "name": "椿柄和風モダンコーデ",
+      "image": "assets/costumes/e71a110e40f093e03a0a5a762780cf6d0771.jpg"
     },
     {
       "itemId": "ITM-0048",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0048.jpg",
-      "name": "レッドフラワー和風モダンワンピース"
+      "name": "レッドフラワー和風モダンワンピース",
+      "image": "assets/costumes/bfae068e8a990146f2d46b0e4b96f00986df.jpg"
     },
     {
       "itemId": "ITM-0049",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0049.jpg",
-      "name": "椿柄和風ロングドレス"
+      "name": "椿柄和風ロングドレス",
+      "image": "assets/costumes/af43b2700c89f70397442a2b3119c89c0c8c.jpg"
     },
     {
       "itemId": "ITM-0050",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0050.jpg",
-      "name": "矢羽柄和風セットアップ"
+      "name": "矢羽柄和風セットアップ",
+      "image": "assets/costumes/e32c6d8da9021591a3f54147d5f7b4784df5.jpg"
     },
     {
       "itemId": "ITM-0051",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0051.jpg",
-      "name": "グレーカモフラミリタリーワンピース"
+      "name": "グレーカモフラミリタリーワンピース",
+      "image": "assets/costumes/27fddb845e5b244edb49339fd88014b2ddb5.jpg"
     },
     {
       "itemId": "ITM-0052",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0052.jpg",
-      "name": "学ラン風ブラックセットアップ"
+      "name": "学ラン風ブラックセットアップ",
+      "image": "assets/costumes/c8a07a5bb0d3711adf5dddb19315b780c816.jpg"
     },
     {
       "itemId": "ITM-0053",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0053.jpg",
-      "name": "ホワイトブラッディゴシックドレス"
+      "name": "ホワイトブラッディゴシックドレス",
+      "image": "assets/costumes/1662730f4367478eccd9236891a200bbbefc.jpg"
     },
     {
       "itemId": "ITM-0054",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0054.jpg",
-      "name": "パープル×ホワイトフリルメイド服"
+      "name": "パープル×ホワイトフリルメイド服",
+      "image": "assets/costumes/2e3a3eeba132829e199c63916245e892f80f.jpg"
     },
     {
       "itemId": "ITM-0055",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0055.jpg",
-      "name": "ネイビー×ホワイトクラシックメイド服"
+      "name": "ネイビー×ホワイトクラシックメイド服",
+      "image": "assets/costumes/8f9e7aaa624fc2ed59174c77a1e110087369.jpg"
     },
     {
       "itemId": "ITM-0056",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0056.jpg",
-      "name": "ピンク×ホワイトレースワンピース"
+      "name": "ピンク×ホワイトレースワンピース",
+      "image": "assets/costumes/cd08b6225b1179a876762d8676353a39038f.jpg"
     },
     {
       "itemId": "ITM-0057",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0057.jpg",
-      "name": "タイガー柄ゴシックセパレート衣装"
+      "name": "タイガー柄ゴシックセパレート衣装",
+      "image": "assets/costumes/8d72efbdc0cd2721856c3bcbcef104f8557e.jpg"
     },
     {
       "itemId": "ITM-0058",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0058.jpg",
-      "name": "ベージュ×グリーンクラシカルメイドワンピース"
+      "name": "ベージュ×グリーンクラシカルメイドワンピース",
+      "image": "assets/costumes/e6f43b798d2f3bc83025a30bb87312e33c8f.jpg"
     },
     {
       "itemId": "ITM-0059",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0059.jpg",
-      "name": "ブラッククラシックメイドワンピース"
+      "name": "ブラッククラシックメイドワンピース",
+      "image": "assets/costumes/d6611b1a69e235e4ac51e256a6a7008bf5b3.jpg"
     },
     {
       "itemId": "ITM-0060",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0060.jpg",
-      "name": "クラシックチェック探偵風ワンピース"
+      "name": "クラシックチェック探偵風ワンピース",
+      "image": "assets/costumes/55ced6c3bdc4cb458fa73cf24a436c5058ce.jpg"
     },
     {
       "itemId": "ITM-0061",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0061.jpg",
-      "name": "パープルセーラーワンピース"
+      "name": "パープルセーラーワンピース",
+      "image": "assets/costumes/497eb97f2c3df35eba477e57447409382a0d.jpg"
     },
     {
       "itemId": "ITM-0062",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0062.jpg",
-      "name": "カラフルピエロコスチューム"
+      "name": "カラフルピエロコスチューム",
+      "image": "assets/costumes/3131deb745b8cc75adc1ff97dc14aedfd0d9.jpg"
     },
     {
       "itemId": "ITM-0063",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0063.jpg",
-      "name": "セーラーカラーワンピース（パープル・半袖・フリル裾デザイン）"
+      "name": "セーラーカラーワンピース（パープル・半袖・フリル裾デザイン）",
+      "image": "assets/costumes/c215c864ca082c24f0aa443a4f75285af28c.jpg"
     },
     {
       "itemId": "ITM-0064",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0064.jpg",
-      "name": "ミントブルークラシカルワンピース"
+      "name": "ミントブルークラシカルワンピース",
+      "image": "assets/costumes/0bb69bd507484c0fe04eea74b47d0076cf62.jpg"
     },
     {
       "itemId": "ITM-0065",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0065.jpg",
-      "name": "ロリータ風フリルワンピース（くすみピンク・レース装飾・リボン付き）"
+      "name": "ロリータ風フリルワンピース（くすみピンク・レース装飾・リボン付き）",
+      "image": "assets/costumes/a8b6fc6cba1f0bbe782756a1e822e6aa7371.jpg"
     },
     {
       "itemId": "ITM-0066",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0066.jpg",
-      "name": "アニメ風バトルコスチュームトップス（オレンジ・Vネック・インナー付き）"
+      "name": "アニメ風バトルコスチュームトップス（オレンジ・Vネック・インナー付き）",
+      "image": "assets/costumes/61c53cf4fb7dca2f80c73cbd9bc01f632498.jpg"
     },
     {
       "itemId": "ITM-0067",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0067.jpg",
-      "name": "アニメ風バトルコスチュームトップス（背面：亀マーク入り・オレンジ）"
+      "name": "アニメ風バトルコスチュームトップス（背面：亀マーク入り・オレンジ）",
+      "image": "assets/costumes/69c95b2953aea784af97c2e5360d530f624a.jpg"
     },
     {
       "itemId": "ITM-0068",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0068.jpg",
-      "name": "クラシック風メイドワンピース（ブラック・フリルネック・半袖）"
+      "name": "クラシック風メイドワンピース（ブラック・フリルネック・半袖）",
+      "image": "assets/costumes/fdcb8492a84756422e1fc9382b660fb19ff5.jpg"
     },
     {
       "itemId": "ITM-0069",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0069.jpg",
-      "name": "和風はっぴ風トップス（レッド×ブラック・オープンフロント）"
+      "name": "和風はっぴ風トップス（レッド×ブラック・オープンフロント）",
+      "image": "assets/costumes/f54fbd1f7b7bd03e524784007aee7fa69ddc.jpg"
     },
     {
       "itemId": "ITM-0070",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0070.jpg",
-      "name": "和風はっぴ風トップス（レッド・背面ロゴ入り）"
+      "name": "和風はっぴ風トップス（レッド・背面ロゴ入り）",
+      "image": "assets/costumes/b086ed5ac076f2d8780756e2695931deff59.jpg"
     },
     {
       "itemId": "ITM-0071",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0071.jpg",
-      "name": "クラシカルロリータ風ワンピース（ネイビー・レース襟・装飾リボン）"
+      "name": "クラシカルロリータ風ワンピース（ネイビー・レース襟・装飾リボン）",
+      "image": "assets/costumes/45c1d6be9937cecde613db6a278a69199786.jpg"
     },
     {
       "itemId": "ITM-0072",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0072.jpg",
-      "name": "ゴシック風メイドコスチューム（ブラック×パープル・十字架モチーフ）"
+      "name": "ゴシック風メイドコスチューム（ブラック×パープル・十字架モチーフ）",
+      "image": "assets/costumes/5343d9740c415f3866800beb5eb170d031dd.jpg"
     },
     {
       "itemId": "ITM-0073",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0073.jpg",
-      "name": "サンタ風チャイナドレスコスチューム（レッド・ファー付きフード）"
+      "name": "サンタ風チャイナドレスコスチューム（レッド・ファー付きフード）",
+      "image": "assets/costumes/28645624253f4fdd97f3b51c15bb76ce68aa.jpg"
     },
     {
       "itemId": "ITM-0074",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0074.jpg",
-      "name": "レッドケープサンタワンピース"
+      "name": "レッドケープサンタワンピース",
+      "image": "assets/costumes/82530d2df783cf6f1d7126c152251e8e8067.jpg"
     },
     {
       "itemId": "ITM-0075",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0075.jpg",
-      "name": "ブルービクトリーチアコスチューム"
+      "name": "ブルービクトリーチアコスチューム",
+      "image": "assets/costumes/f218c52edd47925932e4f00ed331f5e35ad5.jpg"
     },
     {
       "itemId": "ITM-0076",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0076.jpg",
-      "name": "レッドホワイト巫女風コスチューム"
+      "name": "レッドホワイト巫女風コスチューム",
+      "image": "assets/costumes/45218ada9744c2cc3aa2ce8e4a6a753917ff.jpg"
     },
     {
       "itemId": "ITM-0077",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0077.jpg",
-      "name": "クラシック風ギンガムフリルメイドドレス"
+      "name": "クラシック風ギンガムフリルメイドドレス",
+      "image": "assets/costumes/8d451d8732d127393264b99c3bd8ef11b21d.jpg"
     },
     {
       "itemId": "ITM-0078",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0078.jpg",
-      "name": "ブルークラシックメイドドレス"
+      "name": "ブルークラシックメイドドレス",
+      "image": "assets/costumes/a4fb032a7206de0076b0d8babaf61e8519d7.jpg"
     },
     {
       "itemId": "ITM-0079",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0079.jpg",
-      "name": "パープルリボンフリルメイドドレス"
+      "name": "パープルリボンフリルメイドドレス",
+      "image": "assets/costumes/3749e3930216315c2acd70e7a0c315b438d7.jpg"
     },
     {
       "itemId": "ITM-0080",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0080.jpg",
-      "name": "クラシックレッドリボンプリンセスメイドドレス"
+      "name": "クラシックレッドリボンプリンセスメイドドレス",
+      "image": "assets/costumes/7022d7359dcfad3ad1efc02d6854dcc0e4fe.jpg"
     },
     {
       "itemId": "ITM-0081",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0081.jpg",
-      "name": "レッドストライプクラシックワンピース"
+      "name": "レッドストライプクラシックワンピース",
+      "image": "assets/costumes/f9f15495fdba6529fa9046a736ba277f0556.jpg"
     },
     {
       "itemId": "ITM-0082",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0082.jpg",
-      "name": "ブラッククラシカルハイネックドレス"
+      "name": "ブラッククラシカルハイネックドレス",
+      "image": "assets/costumes/dc0994b83153a94e85c50688b627799c97c0.jpg"
     },
     {
       "itemId": "ITM-0083",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0083.jpg",
-      "name": "ダーククラウンピエロコスチューム"
+      "name": "ダーククラウンピエロコスチューム",
+      "image": "assets/costumes/05faae7e984c82014babb152949dc90d6b07.jpg"
     },
     {
       "itemId": "ITM-0084",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0084.jpg",
-      "name": "カラフルクラウンピエロコスチューム"
+      "name": "カラフルクラウンピエロコスチューム",
+      "image": "assets/costumes/9643cf951b340dcb8aa8a627ad3bb3ed33f4.jpg"
     },
     {
       "itemId": "ITM-0085",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0085.jpg",
-      "name": "グレージュレースレイヤードドレス"
+      "name": "グレージュレースレイヤードドレス",
+      "image": "assets/costumes/9ba502b339e8be4bce3bb009b76aa61350b1.jpg"
     },
     {
       "itemId": "ITM-0086",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0086.jpg",
-      "name": "レッドサンタケープドレス"
+      "name": "レッドサンタケープドレス",
+      "image": "assets/costumes/9a9c774d43b381a20e7b806163ffea25a91f.jpg"
     },
     {
       "itemId": "ITM-0087",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0087.jpg",
-      "name": "クラシックサンタリボンドレス"
+      "name": "クラシックサンタリボンドレス",
+      "image": "assets/costumes/8b969e31b8a72a3a271a9c23ffaa397f60b9.jpg"
     },
     {
       "itemId": "ITM-0088",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0088.jpg",
-      "name": "グリーンティーセットメイドドレス"
+      "name": "グリーンティーセットメイドドレス",
+      "image": "assets/costumes/a0dcc324bbaf4d7cfb1f2c3dfb9205f6b33c.jpg"
     },
     {
       "itemId": "ITM-0089",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0089.jpg",
-      "name": "カラフルパッチワークピエロコスチューム"
+      "name": "カラフルパッチワークピエロコスチューム",
+      "image": "assets/costumes/300079b55a99c55ff7fb850c92b04ee6a043.jpg"
     },
     {
       "itemId": "ITM-0090",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0090.jpg",
-      "name": "スノーホワイトプリンセスドレス"
+      "name": "スノーホワイトプリンセスドレス",
+      "image": "assets/costumes/4abbca83279d6fa67122831a4ab4609e6d6c.jpg"
     },
     {
       "itemId": "ITM-0091",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0091.jpg",
-      "name": "レインボードットピエロコスチューム"
+      "name": "レインボードットピエロコスチューム",
+      "image": "assets/costumes/8b07d7b825d83b762f56e79670b5a824c526.jpg"
     },
     {
       "itemId": "ITM-0092",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0092.jpg",
-      "name": "ネイビーポリスガールドレス"
+      "name": "ネイビーポリスガールドレス",
+      "image": "assets/costumes/378753355b517810d606c0b16f82e917ce06.jpg"
     },
     {
       "itemId": "ITM-0093",
       "status": "貸出中",
       "setId": "SET-0003",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0093.jpg",
       "name": "ミントブルー ナース風ワンピース",
-      "borrower": "大崎さん",
-      "approvedBy": "増本",
-      "loanDate": "2026-04-16"
+      "image": "assets/costumes/d423b1e5d755bf1f621cbbab8c3688213397.jpg"
     },
     {
       "itemId": "ITM-0094",
       "status": "貸出中",
       "setId": "SET-0003",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0094.jpg",
       "name": "水色 ナース風フリルワンピース",
-      "borrower": "大崎さん",
-      "approvedBy": "増本",
-      "loanDate": "2026-04-16"
+      "image": "assets/costumes/ff46bc78e28c31f28cded2f6ab06306535db.jpg"
     },
     {
       "itemId": "ITM-0095",
       "status": "貸出中",
       "setId": "SET-0003",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0095.jpg",
       "name": "水色 シンプルナースワンピース",
-      "borrower": "大崎さん",
-      "approvedBy": "増本",
-      "loanDate": "2026-04-16"
+      "image": "assets/costumes/6152d6d9c4acf17882b550331e804eb7df89.jpg"
     },
     {
       "itemId": "ITM-0096",
       "status": "貸出中",
       "setId": "SET-0003",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0096.jpg",
       "name": "ナース小物セット（聴診器）",
-      "borrower": "大崎さん",
-      "approvedBy": "増本",
-      "loanDate": "2026-04-16"
+      "image": "assets/costumes/3cda3a76b9faa4a332c8e4068ac8d53f16ee.jpg"
     },
     {
       "itemId": "ITM-0097",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0097.jpg",
-      "name": "ブラウンチェックのスチームパンク風衣装"
+      "name": "ブラウンチェックのスチームパンク風衣装",
+      "image": "assets/costumes/2bb6cf26b98cbaa9a8256d6ea4b17b064621.jpg"
     },
     {
       "itemId": "ITM-0098",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0098.jpg",
-      "name": "ブラウンギンガムのチョコメイド衣装"
+      "name": "ブラウンギンガムのチョコメイド衣装",
+      "image": "assets/costumes/5bd3ef237b654270a5d48aeccd1867255d87.jpg"
     },
     {
       "itemId": "ITM-0099",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0099.jpg",
-      "name": "ミントブルーの和風チャイナ衣装"
+      "name": "ミントブルーの和風チャイナ衣装",
+      "image": "assets/costumes/45360fb67fd1d26442fa9378e85934d71112.jpg"
     },
     {
       "itemId": "ITM-0100",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0100.jpg",
-      "name": "ピンクのクラシカルロリータワンピース"
+      "name": "ピンクのクラシカルロリータワンピース",
+      "image": "assets/costumes/2bf7298e6154cfcf75ea87ed6143165c6b14.jpg"
     },
     {
       "itemId": "ITM-0101",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0101.jpg",
-      "name": "ホワイト×ラベンダーの童話風ワンピース"
+      "name": "ホワイト×ラベンダーの童話風ワンピース",
+      "image": "assets/costumes/d1b2d569fef80b1e4392288b10d8e778ea76.jpg"
     },
     {
       "itemId": "ITM-0102",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0102.jpg",
-      "name": "水色ストライプのアイドル風衣装"
+      "name": "水色ストライプのアイドル風衣装",
+      "image": "assets/costumes/2f5f9c83361474d7efc9576c4696a0786607.jpg"
     },
     {
       "itemId": "ITM-0103",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0103.jpg",
-      "name": "グレーストライプのクラシカルメイド服"
+      "name": "グレーストライプのクラシカルメイド服",
+      "image": "assets/costumes/9b324be8eff98e46fb111f7d386c170417da.jpg"
     },
     {
       "itemId": "ITM-0104",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0104.jpg",
-      "name": "ゴールド花柄のチャイナドレス"
+      "name": "ゴールド花柄のチャイナドレス",
+      "image": "assets/costumes/0d6a8ad6bdd08c915749ee6f69dff1b5d0b7.jpg"
     },
     {
       "itemId": "ITM-0105",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0105.jpg",
-      "name": "水色リボンのフリルワンピース"
+      "name": "水色リボンのフリルワンピース",
+      "image": "assets/costumes/3047876f8105431a89111e0431893a080a70.jpg"
     },
     {
       "itemId": "ITM-0106",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0106.jpg",
-      "name": "紫花柄のチャイナドレス"
+      "name": "紫花柄のチャイナドレス",
+      "image": "assets/costumes/b8bebb917619d9c5cec3c4f8f71f5e83272a.jpg"
     },
     {
       "itemId": "ITM-0107",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0107.jpg",
-      "name": "黒×赤のチャイナ風ワンピース"
+      "name": "黒×赤のチャイナ風ワンピース",
+      "image": "assets/costumes/36069b44179edf5be12c572419eeb5dcf3ed.jpg"
     },
     {
       "itemId": "ITM-0108",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0108.jpg",
-      "name": "赤花柄のチャイナ風ワンピース"
+      "name": "赤花柄のチャイナ風ワンピース",
+      "image": "assets/costumes/a60b626887ec238d2f58b00afef3cd2422d9.jpg"
     },
     {
       "itemId": "ITM-0109",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0109.jpg",
-      "name": "赤龍柄のチャイナドレス"
+      "name": "赤龍柄のチャイナドレス",
+      "image": "assets/costumes/033d31f507fe58f1dad6d64e741986539fa5.jpg"
     },
     {
       "itemId": "ITM-0110",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0110.jpg",
-      "name": "ピンクサテンのクラシカルメイド服"
+      "name": "ピンクサテンのクラシカルメイド服",
+      "image": "assets/costumes/d7a24cb9cede2a4e07030c99b98af9f517ce.jpg"
     },
     {
       "itemId": "ITM-0111",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0111.jpg",
-      "name": "水色サテンの黒リボンワンピース"
+      "name": "水色サテンの黒リボンワンピース",
+      "image": "assets/costumes/495f5d038276e9c228aabfb09309e9790864.jpg"
     },
     {
       "itemId": "ITM-0112",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0112.jpg",
-      "name": "赤×黒チュールのチャイナ風ワンピース"
+      "name": "赤×黒チュールのチャイナ風ワンピース",
+      "image": "assets/costumes/671d4b6c4d90a9dc42eaa284933ccd131161.jpg"
     },
     {
       "itemId": "ITM-0113",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0113.jpg",
-      "name": "ワインレッド龍柄のチャイナドレス"
+      "name": "ワインレッド龍柄のチャイナドレス",
+      "image": "assets/costumes/73e4c05609e42f6c7a5e58a87fdf3e589a88.jpg"
     },
     {
       "itemId": "ITM-0114",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0114.jpg",
-      "name": "黒×赤金のチャイナ風ワンピース"
+      "name": "黒×赤金のチャイナ風ワンピース",
+      "image": "assets/costumes/ebd3765998304c36d6e0af7691b02005d6d6.jpg"
     },
     {
       "itemId": "ITM-0115",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0115.jpg",
-      "name": "青花柄のチャイナ風ワンピース"
+      "name": "青花柄のチャイナ風ワンピース",
+      "image": "assets/costumes/f2b52a9a825516bae391bfab9bcb1e2a9a18.jpg"
     },
     {
       "itemId": "ITM-0116",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0116.jpg",
-      "name": "ピンクの制服風セットアップ"
+      "name": "ピンクの制服風セットアップ",
+      "image": "assets/costumes/31e9b2e7de2caf15b4e6112961aed8faa775.jpg"
     },
     {
       "itemId": "ITM-0117",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0117.jpg",
-      "name": "黒レースのクラシカルワンピース"
+      "name": "黒レースのクラシカルワンピース",
+      "image": "assets/costumes/27d8349dde7d302156e8da49807c2686f181.jpg"
     },
     {
       "itemId": "ITM-0118",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0118.jpg",
-      "name": "赤花柄の和風羽織衣装"
+      "name": "赤花柄の和風羽織衣装",
+      "image": "assets/costumes/d8006d4611882caf426decdf3142a1a19d71.jpg"
     },
     {
       "itemId": "ITM-0119",
       "status": "在庫",
       "category": "メイド",
-      "image": "衣装写真/メイド/ITM-0119.jpg",
-      "name": "白ファーのクリスマス風チェック衣装"
+      "name": "白ファーのクリスマス風チェック衣装",
+      "image": "assets/costumes/250e5d8f8abd11598a2fb44a9bb89ca7209a.jpg"
     }
   ]
 }

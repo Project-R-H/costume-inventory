@@ -6,11 +6,7 @@ export type CostumeItem = {
   category?: string;
   name?: string;
   status: CostumeStatus;
-  note?: string;
   image?: string;
-  borrower?: string;
-  approvedBy?: string;
-  loanDate?: string;
 };
 
 export type DataFile = {

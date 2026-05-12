@@ -1,8 +1,15 @@
 import fs from "node:fs";
 import path from "node:path";
+import crypto from "node:crypto";
 import * as XLSX from "xlsx";
+import sharp from "sharp";
 
-type CostumeStatus = "在庫" | "貸出中" | "洗濯中" | "廃棄" | "不明";
+type CostumeStatus =
+  | "\u5728\u5eab"
+  | "\u8cb8\u51fa\u4e2d"
+  | "\u6d17\u6fef\u4e2d"
+  | "\u5ec3\u68c4"
+  | "\u4e0d\u660e";
 
 type CostumeItem = {
   itemId: string;
@@ -10,11 +17,7 @@ type CostumeItem = {
   category?: string;
   name?: string;
   status: CostumeStatus;
-  note?: string;
   image?: string;
-  borrower?: string;
-  approvedBy?: string;
-  loanDate?: string;
 };
 
 type DataFile = {
@@ -23,14 +26,46 @@ type DataFile = {
 };
 
 const ROOT = process.cwd();
-const INPUT_XLSX = path.resolve("C:\\Users\\user\\Desktop\\data\\衣装管理.xlsx");
+
+const INPUT_XLSX = path.resolve(
+  "C:\\Users\\user\\Desktop\\data\\\u8863\u88c5\u7ba1\u7406.xlsx"
+);
+
+const SOURCE_IMAGE_ROOT = path.resolve(
+  "C:\\Users\\user\\Desktop\\data\\\u8863\u88c5\u5199\u771f"
+);
+
+const PUBLIC_IMAGE_DIR = path.join(ROOT, "public", "assets", "costumes");
 const OUTPUT_PUBLIC = path.join(ROOT, "public", "data.json");
-const OUTPUT_DOCS = path.join(ROOT, "docs", "data.json");
+const IMAGE_MAP_PATH = path.join(ROOT, "private", "image-name-map.json");
 
-const SHEET_ITEMS = "個体台帳";
-const SHEET_LOANS = "貸出記録";
+const SHEET_ITEMS = "\u500b\u4f53\u53f0\u5e33";
+const SHEET_LOANS = "\u8cb8\u51fa\u8a18\u9332";
 
-function ensureDir(filePath: string) {
+const H_SET_ID = "\u30bb\u30c3\u30c8ID";
+const H_ITEM_ID = "\u500b\u4f53ID";
+const H_TYPE = "\u7a2e\u985e";
+const H_CATEGORY = "\u30ab\u30c6\u30b4\u30ea";
+const H_STATUS = "\u72b6\u614b";
+const H_PHOTO = "\u5199\u771f\u30d5\u30a1\u30a4\u30eb\u540d";
+const H_PUBLIC_NAME = "\u516c\u958b\u540d";
+const H_PUBLIC_FLAG = "\u516c\u958b/\u975e\u516c\u958b";
+const H_RETURN_DATE = "\u8fd4\u5374\u65e5";
+
+const STATUS_STOCK = "\u5728\u5eab" as const;
+const STATUS_LOAN = "\u8cb8\u51fa\u4e2d" as const;
+const STATUS_WASH = "\u6d17\u6fef\u4e2d" as const;
+const STATUS_DISCARD = "\u5ec3\u68c4" as const;
+const STATUS_UNKNOWN = "\u4e0d\u660e" as const;
+const PUBLIC_VALUE = "\u516c\u958b";
+
+type ImageMap = Record<string, string>;
+
+function ensureDir(dirPath: string) {
+  fs.mkdirSync(dirPath, { recursive: true });
+}
+
+function ensureParentDir(filePath: string) {
   fs.mkdirSync(path.dirname(filePath), { recursive: true });
 }
 
@@ -39,78 +74,140 @@ function toText(v: unknown): string {
   return String(v).trim();
 }
 
-function toDateText(v: unknown): string {
-  if (!v) return "";
-
-  if (v instanceof Date && !Number.isNaN(v.getTime())) {
-    return v.toISOString().slice(0, 10);
-  }
-
-  const s = String(v).trim();
-  if (!s) return "";
-
-  const d = new Date(s);
-  if (!Number.isNaN(d.getTime())) {
-    return d.toISOString().slice(0, 10);
-  }
-
-  return s;
-}
-
 function normalizeStatus(raw: unknown): CostumeStatus {
   const s = String(raw ?? "").replace(/\s+/g, "").trim();
 
-  if (!s) return "不明";
-
-  if (s === "在庫" || s === "在庫あり" || s === "保管中") return "在庫";
+  if (!s) return STATUS_UNKNOWN;
 
   if (
-    s === "貸出中" ||
-    s === "貸出" ||
-    s === "貸し出し中" ||
-    s === "使用中" ||
-    s === "レンタル中"
+    s === STATUS_STOCK ||
+    s === "\u5728\u5eab\u3042\u308a" ||
+    s === "\u4fdd\u7ba1\u4e2d"
   ) {
-    return "貸出中";
+    return STATUS_STOCK;
   }
 
   if (
-    s === "洗濯中" ||
-    s === "洗濯" ||
-    s === "クリーニング中" ||
-    s === "クリーニング"
+    s === STATUS_LOAN ||
+    s === "\u8cb8\u51fa" ||
+    s === "\u8cb8\u3057\u51fa\u3057\u4e2d" ||
+    s === "\u4f7f\u7528\u4e2d" ||
+    s === "\u30ec\u30f3\u30bf\u30eb\u4e2d"
   ) {
-    return "洗濯中";
+    return STATUS_LOAN;
   }
 
   if (
-    s === "廃棄" ||
-    s === "廃棄済" ||
-    s === "廃棄済み" ||
-    s === "処分" ||
-    s === "処分済"
+    s === STATUS_WASH ||
+    s === "\u6d17\u6fef" ||
+    s === "\u30af\u30ea\u30fc\u30cb\u30f3\u30b0\u4e2d" ||
+    s === "\u30af\u30ea\u30fc\u30cb\u30f3\u30b0"
   ) {
-    return "廃棄";
+    return STATUS_WASH;
   }
 
-  return "不明";
+  if (
+    s === STATUS_DISCARD ||
+    s === "\u5ec3\u68c4\u6e08" ||
+    s === "\u5ec3\u68c4\u6e08\u307f" ||
+    s === "\u51e6\u5206" ||
+    s === "\u51e6\u5206\u6e08"
+  ) {
+    return STATUS_DISCARD;
+  }
+
+  return STATUS_UNKNOWN;
 }
 
-function buildImagePath(category: string, photoFileName: string): string {
+function loadImageMap(): ImageMap {
+  if (!fs.existsSync(IMAGE_MAP_PATH)) return {};
+
+  const raw = fs.readFileSync(IMAGE_MAP_PATH, "utf-8");
+  const parsed = JSON.parse(raw);
+
+  if (!parsed || typeof parsed !== "object") return {};
+  return parsed as ImageMap;
+}
+
+function saveImageMap(map: ImageMap) {
+  ensureParentDir(IMAGE_MAP_PATH);
+  fs.writeFileSync(IMAGE_MAP_PATH, JSON.stringify(map, null, 2), "utf-8");
+}
+
+function makeMapKey(category: string, photoFileName: string): string {
+  return `${category}||${photoFileName}`;
+}
+
+function getOrCreatePublicImageName(map: ImageMap, key: string): string {
+  if (map[key]) return map[key];
+
+  const randomName = crypto.randomBytes(18).toString("hex");
+  const fileName = `${randomName}.jpg`;
+
+  map[key] = fileName;
+  return fileName;
+}
+
+function resolveSourceImage(category: string, photoFileName: string): string {
   if (!photoFileName) return "";
-  if (!category) return `衣装写真/${photoFileName}`;
-  return `衣装写真/${category}/${photoFileName}`;
-}
 
-function main() {
-  if (!fs.existsSync(INPUT_XLSX)) {
-    throw new Error(`Excelファイルが見つかりません: ${INPUT_XLSX}`);
+  if (!category) {
+    return path.join(SOURCE_IMAGE_ROOT, photoFileName);
   }
 
-  fs.accessSync(INPUT_XLSX, fs.constants.R_OK);
+  return path.join(SOURCE_IMAGE_ROOT, category, photoFileName);
+}
 
-  const fileBuffer = fs.readFileSync(INPUT_XLSX);
-  const wb = XLSX.read(fileBuffer, {
+async function createPublicImage(sourcePath: string, outputPath: string) {
+  if (!fs.existsSync(sourcePath)) {
+    throw new Error(`source image not found: ${sourcePath}`);
+  }
+
+  ensureParentDir(outputPath);
+
+  await sharp(sourcePath)
+    .rotate()
+    .jpeg({
+      quality: 86,
+      mozjpeg: true,
+    })
+    .toFile(outputPath);
+}
+
+function cleanPublicImageDir() {
+  fs.rmSync(PUBLIC_IMAGE_DIR, { recursive: true, force: true });
+  ensureDir(PUBLIC_IMAGE_DIR);
+}
+
+async function run() {
+  if (!fs.existsSync(INPUT_XLSX)) {
+    throw new Error(`excel file not found: ${INPUT_XLSX}`);
+  }
+
+  if (!fs.existsSync(SOURCE_IMAGE_ROOT)) {
+    throw new Error(`source image folder not found: ${SOURCE_IMAGE_ROOT}`);
+  }
+
+  const dangerousPublicPhotoDir = path.join(
+    ROOT,
+    "public",
+    "\u8863\u88c5\u5199\u771f"
+  );
+
+  if (fs.existsSync(dangerousPublicPhotoDir)) {
+    throw new Error(
+      [
+        "public original image folder still exists.",
+        "Move it outside the project first.",
+        "Move from: public original image folder",
+        "Move to: C:\\Users\\user\\Desktop\\data\\original image folder",
+      ].join("\n")
+    );
+  }
+
+  const excelBuffer = fs.readFileSync(INPUT_XLSX);
+
+  const wb = XLSX.read(excelBuffer, {
     type: "buffer",
     cellDates: true,
   });
@@ -119,10 +216,11 @@ function main() {
   const wsLoans = wb.Sheets[SHEET_LOANS];
 
   if (!wsItems) {
-    throw new Error(`シート「${SHEET_ITEMS}」が見つかりません`);
+    throw new Error(`sheet not found: ${SHEET_ITEMS}`);
   }
+
   if (!wsLoans) {
-    throw new Error(`シート「${SHEET_LOANS}」が見つかりません`);
+    throw new Error(`sheet not found: ${SHEET_LOANS}`);
   }
 
   const itemRows = XLSX.utils.sheet_to_json<Record<string, unknown>>(wsItems, {
@@ -133,60 +231,46 @@ function main() {
     defval: "",
   });
 
-  const activeLoanMap = new Map<
-    string,
-    {
-      borrower: string;
-      approvedBy: string;
-      loanDate: string;
-    }
-  >();
+  const activeLoanSetIds = new Set<string>();
 
   for (const row of loanRows) {
-    const setId = toText(row["セットID"]);
-    const borrower = toText(row["貸出先"]);
-    const approvedBy = toText(row["承認者"]);
-    const loanDate = toDateText(row["貸出日"]);
-    const returnDate = toText(row["返却日"]);
+    const setId = toText(row[H_SET_ID]);
+    const returnDate = toText(row[H_RETURN_DATE]);
 
     if (!setId) continue;
     if (returnDate) continue;
 
-    activeLoanMap.set(setId, {
-      borrower,
-      approvedBy,
-      loanDate,
-    });
+    activeLoanSetIds.add(setId);
   }
 
+  const imageMap = loadImageMap();
+
+  cleanPublicImageDir();
+
   const items: CostumeItem[] = [];
+  const copiedImages: string[] = [];
 
   for (const row of itemRows) {
-    const setId = toText(row["セットID"]);
-    const itemId = toText(row["個体ID"]);
-    const type = toText(row["種類"]);
-    const category = toText(row["カテゴリ"]);
-    const rawStatus = row["状態"];
-    const note = toText(row["備考"]);
-    const photoFileName = toText(row["写真ファイル名"]);
-    const publicName = toText(row["公開名"]);
-    const publicFlag = toText(row["公開/非公開"]);
+    const setId = toText(row[H_SET_ID]);
+    const itemId = toText(row[H_ITEM_ID]);
+    const type = toText(row[H_TYPE]);
+    const category = toText(row[H_CATEGORY]);
+    const rawStatus = row[H_STATUS];
+    const photoFileName = toText(row[H_PHOTO]);
+    const publicName = toText(row[H_PUBLIC_NAME]);
+    const publicFlag = toText(row[H_PUBLIC_FLAG]);
 
     if (!itemId) continue;
 
-    // 「公開」だけ表示。空欄も非表示。
-    if (publicFlag !== "公開") {
+    if (publicFlag !== PUBLIC_VALUE) {
       continue;
     }
 
     let status = normalizeStatus(rawStatus);
 
-    const activeLoan = setId ? activeLoanMap.get(setId) : undefined;
-    if (activeLoan) {
-      status = "貸出中";
+    if (setId && activeLoanSetIds.has(setId)) {
+      status = STATUS_LOAN;
     }
-
-    const image = buildImagePath(category, photoFileName);
 
     const item: CostumeItem = {
       itemId,
@@ -195,8 +279,6 @@ function main() {
 
     if (setId) item.setId = setId;
     if (category) item.category = category;
-    if (note) item.note = note;
-    if (image) item.image = image;
 
     if (publicName) {
       item.name = publicName;
@@ -205,50 +287,59 @@ function main() {
       if (fallbackName) item.name = fallbackName;
     }
 
-    if (activeLoan) {
-      if (activeLoan.borrower) item.borrower = activeLoan.borrower;
-      if (activeLoan.approvedBy) item.approvedBy = activeLoan.approvedBy;
-      if (activeLoan.loanDate) item.loanDate = activeLoan.loanDate;
+    if (photoFileName) {
+      const sourceImage = resolveSourceImage(category, photoFileName);
+      const mapKey = makeMapKey(category, photoFileName);
+      const publicImageName = getOrCreatePublicImageName(imageMap, mapKey);
+      const outputImage = path.join(PUBLIC_IMAGE_DIR, publicImageName);
+
+      await createPublicImage(sourceImage, outputImage);
+
+      item.image = `assets/costumes/${publicImageName}`;
+      copiedImages.push(item.image);
     }
 
     items.push(item);
   }
+
+  saveImageMap(imageMap);
 
   const data: DataFile = {
     generatedAt: new Date().toISOString(),
     items,
   };
 
-  ensureDir(OUTPUT_PUBLIC);
-  ensureDir(OUTPUT_DOCS);
-
+  ensureParentDir(OUTPUT_PUBLIC);
   fs.writeFileSync(OUTPUT_PUBLIC, JSON.stringify(data, null, 2), "utf-8");
-  fs.writeFileSync(OUTPUT_DOCS, JSON.stringify(data, null, 2), "utf-8");
 
   const counts = {
-    在庫: items.filter((x) => x.status === "在庫").length,
-    貸出中: items.filter((x) => x.status === "貸出中").length,
-    洗濯中: items.filter((x) => x.status === "洗濯中").length,
-    廃棄: items.filter((x) => x.status === "廃棄").length,
-    不明: items.filter((x) => x.status === "不明").length,
+    stock: items.filter((x) => x.status === STATUS_STOCK).length,
+    loan: items.filter((x) => x.status === STATUS_LOAN).length,
+    wash: items.filter((x) => x.status === STATUS_WASH).length,
+    discard: items.filter((x) => x.status === STATUS_DISCARD).length,
+    unknown: items.filter((x) => x.status === STATUS_UNKNOWN).length,
   };
 
-  console.log(`読込Excel: ${INPUT_XLSX}`);
-  console.log(`読込シート: ${SHEET_ITEMS}, ${SHEET_LOANS}`);
-  console.log(`出力件数: ${items.length}`);
-  console.log("状態内訳:", counts);
-  console.log(
-    "貸出中一覧:",
-    items
-      .filter((x) => x.status === "貸出中")
-      .map((x) => ({
-        itemId: x.itemId,
-        setId: x.setId ?? "",
-        borrower: x.borrower ?? "",
-      }))
-  );
-  console.log(`出力: ${OUTPUT_PUBLIC}`);
-  console.log(`出力: ${OUTPUT_DOCS}`);
+  console.log(`input excel: ${INPUT_XLSX}`);
+  console.log(`source image folder: ${SOURCE_IMAGE_ROOT}`);
+  console.log(`output json: ${OUTPUT_PUBLIC}`);
+  console.log(`public image folder: ${PUBLIC_IMAGE_DIR}`);
+  console.log(`item count: ${items.length}`);
+  console.log(`public image count: ${copiedImages.length}`);
+  console.log("status counts:", counts);
+
+  console.log("");
+  console.log("not exported to public data.json:");
+  console.log("- borrower");
+  console.log("- approvedBy");
+  console.log("- loanDate");
+  console.log("- returnDate");
+  console.log("- note");
+  console.log("");
+  console.log("public images were regenerated without copying EXIF/GPS metadata.");
 }
 
-main();
+run().catch((e) => {
+  console.error("ERROR:", e?.message ?? e);
+  process.exit(1);
+});

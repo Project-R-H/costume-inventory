@@ -35,7 +35,7 @@ const STYLE_TAGS = [
   "ミリタリー",
   "モダン",
   "フェミニン",
- "ナース",
+  "ナース",
 ];
 
 function statusClass(status: string) {
@@ -64,9 +64,8 @@ function normalizeTags(text?: string): string[] {
 function detectTagsFromItem(it: {
   category?: string;
   name?: string;
-  note?: string;
 }) {
-  const source = [it.category ?? "", it.name ?? "", it.note ?? ""].join(" ");
+  const source = [it.category ?? "", it.name ?? ""].join(" ");
   const colors = COLOR_TAGS.filter((tag) => source.includes(tag));
   const styles = STYLE_TAGS.filter((tag) => source.includes(tag));
   return { colors, styles };
@@ -97,37 +96,45 @@ export default function App() {
 
   const categories = useMemo(() => {
     const s = new Set<string>();
+
     for (const it of data?.items ?? []) {
       if (it.category) {
         normalizeTags(it.category).forEach((tag) => s.add(tag));
       }
     }
+
     return Array.from(s).sort();
   }, [data]);
 
   const statuses = useMemo(() => {
     const s = new Set<string>();
+
     for (const it of data?.items ?? []) {
       s.add(it.status);
     }
+
     return Array.from(s).sort();
   }, [data]);
 
   const availableColors = useMemo(() => {
     const s = new Set<string>();
+
     for (const it of data?.items ?? []) {
       const tags = detectTagsFromItem(it);
       tags.colors.forEach((x) => s.add(x));
     }
+
     return Array.from(s).sort();
   }, [data]);
 
   const availableStyles = useMemo(() => {
     const s = new Set<string>();
+
     for (const it of data?.items ?? []) {
       const tags = detectTagsFromItem(it);
       tags.styles.forEach((x) => s.add(x));
     }
+
     return Array.from(s).sort();
   }, [data]);
 
@@ -155,7 +162,6 @@ export default function App() {
         it.category ?? "",
         it.name ?? "",
         it.status,
-        it.note ?? "",
         ...detected.colors,
         ...detected.styles,
       ]
@@ -185,7 +191,7 @@ export default function App() {
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="検索：名称 / 色 / 系統 / ID / セットID / メモ…"
+              placeholder="検索：名称 / 色 / 系統 / ID / セットID…"
             />
 
             <select value={status} onChange={(e) => setStatus(e.target.value)}>
@@ -321,8 +327,6 @@ export default function App() {
                         </div>
                       )}
                     </div>
-
-                    {it.note && <div className="mini">メモ：{it.note}</div>}
                   </div>
                 </div>
               );
@@ -408,8 +412,6 @@ export default function App() {
                             </div>
                           )}
                         </div>
-
-                        {x.note && <div className="mini">メモ：{x.note}</div>}
                       </div>
                     </div>
                   );
