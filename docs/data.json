@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-13T00:59:51.111Z",
+  "generatedAt": "2026-05-18T07:12:17.738Z",
   "items": [
     {
       "itemId": "ITM-0001",
@@ -158,37 +158,37 @@
     {
       "itemId": "ITM-0021",
       "status": "在庫",
-      "category": "メイド",
-      "name": "ブラック×イエローハーネスジャケット",
-      "image": "assets/costumes/8604c472d49ed9fe43e4248df8d4c3f167e2.jpg"
+      "category": "アイドル",
+      "name": "ブラック×イエローハーネスジャケット(練習用)",
+      "image": "assets/costumes/e40ef7340e18186c76d52dc31a67273759ab.jpg"
     },
     {
       "itemId": "ITM-0022",
       "status": "在庫",
-      "category": "メイド",
-      "name": "ブラック×イエローセパレート（ショートセット）",
-      "image": "assets/costumes/204f6214c8811601444fac14fd7541761c29.jpg"
+      "category": "アイドル",
+      "name": "ブラック×イエローセパレート（ショートセット）(練習用)",
+      "image": "assets/costumes/d880bcd5984c63e3cd1e1e41ab50f26d0736.jpg"
     },
     {
       "itemId": "ITM-0023",
       "status": "在庫",
-      "category": "メイド",
-      "name": "ブラックハーネスケープ（ストリートセット）",
-      "image": "assets/costumes/c0c130de6ec31383084faa9bbff30e0444e9.jpg"
+      "category": "アイドル",
+      "name": "ブラックハーネスケープ（ストリートセット）(練習用)",
+      "image": "assets/costumes/14317d5523e4f67779ccd2e273aacb029f75.jpg"
     },
     {
       "itemId": "ITM-0024",
       "status": "在庫",
-      "category": "メイド",
-      "name": "ブラック×イエローハーネスセット（ロングパンツ）",
-      "image": "assets/costumes/a23b323861d893b44b0985f7850c161b6857.jpg"
+      "category": "アイドル",
+      "name": "ブラック×イエローハーネスセット（ロングパンツ）(練習用)",
+      "image": "assets/costumes/1001e90c86a85372fd75fa0e1c1027935c54.jpg"
     },
     {
       "itemId": "ITM-0025",
       "status": "在庫",
-      "category": "メイド",
-      "name": "ブラック×イエローハーネスセット（スカート）",
-      "image": "assets/costumes/10b874227381ea69014de293e8f936a808b4.jpg"
+      "category": "アイドル",
+      "name": "ブラック×イエローハーネスセット（スカート）(練習用)",
+      "image": "assets/costumes/b46e87df8c5431b72b822a4781b47d0607fe.jpg"
     },
     {
       "itemId": "ITM-0026",
@@ -851,6 +851,69 @@
       "category": "メイド",
       "name": "白ファーのクリスマス風チェック衣装",
       "image": "assets/costumes/250e5d8f8abd11598a2fb44a9bb89ca7209a.jpg"
+    },
+    {
+      "itemId": "ITM-0120",
+      "status": "在庫",
+      "category": "メイド",
+      "name": "ピンクゴールドベリーダンスドレス",
+      "image": "assets/costumes/6cbac4799ba46a8216ceaa62d5e9d7312dc0.jpg"
+    },
+    {
+      "itemId": "ITM-0121",
+      "status": "在庫",
+      "category": "メイド",
+      "name": "ブラックレースゴシックドレス",
+      "image": "assets/costumes/857a74a4b84534d6ca4d887f064390e28255.jpg"
+    },
+    {
+      "itemId": "ITM-0122",
+      "status": "在庫",
+      "category": "メイド",
+      "name": "レッドチェックファーキャットドレス",
+      "image": "assets/costumes/e0c85ca0c4e16368770edba64984b06b3b08.jpg"
+    },
+    {
+      "itemId": "ITM-0123",
+      "status": "在庫",
+      "category": "メイド",
+      "name": "ワインレッドクラシックメイドドレス",
+      "image": "assets/costumes/338c9ce43ef4dbe3382010f53e337fc107da.jpg"
+    },
+    {
+      "itemId": "ITM-0124",
+      "status": "在庫",
+      "category": "メイド",
+      "name": "レッドレースサンタドレス",
+      "image": "assets/costumes/86fdeae5e86c91718e98b9e705511e5c6c6b.jpg"
+    },
+    {
+      "itemId": "ITM-0125",
+      "status": "在庫",
+      "category": "メイド",
+      "name": "レッドブラックレースサンタドレス",
+      "image": "assets/costumes/f0af9f048eb118d9ad8d6122be936be61c7e.jpg"
+    },
+    {
+      "itemId": "ITM-0126",
+      "status": "在庫",
+      "category": "メイド",
+      "name": "ブルーチャイナフラワードレス",
+      "image": "assets/costumes/e1414457a54f884c773cd48c5f32dc57590d.jpg"
+    },
+    {
+      "itemId": "ITM-0127",
+      "status": "在庫",
+      "category": "メイド",
+      "name": "シルバーグレーチャイナドレス",
+      "image": "assets/costumes/4e2640190cce7586867e075ea8fa214492dd.jpg"
+    },
+    {
+      "itemId": "ITM-0128",
+      "status": "在庫",
+      "category": "メイド",
+      "name": "モノクロドットレースドレス",
+      "image": "assets/costumes/efb11041b6651bcc94a08ccf5da090ce37d4.jpg"
     }
   ]
 }
